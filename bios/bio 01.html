@@ -4,40 +4,40 @@
    
 <head>
 	<meta charset="utf-8">
-	<title>Mamba's Pet Rescue | Paprika</title>
-	<!--css stylesheet will control fonts and their sizes, background colour, etc-->
+	<title>Mamba's Pet Rescue | Home</title>
+	<link rel="icon" type="image/icon" href="favicon.ico">
+	<!--css stylesheet will control fonts and their sizes, background colour, icon sizes etc-->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 </head>
 
 <body>
 	<!--logo-->
-	<img id="logo" src="logo.png" alt="Mamba's Pet Rescue logo" width=50%>
+	<img id="logo" src="../img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
 
 	<!-- navigation; add CSS to space out, make hoverable and add contrast to "urhere" id -->
 	<nav>
-		<a id="urhere" href="">Home (PetPal)</a>
-		<a href="">Cat-alogue Search</a>
-		<a href="">FAQ</a>
-		<a href="">Our Mission</a>
-		<a href="">Our Team</a>
+		<a href="../index.html">Home (PetPal)</a>
+		<a href="../search.html">Cat-alogue Search</a>
+		<a href="../faq.html">FAQ</a>
+		<a href="../mission.html">Our Mission</a>
+		<a href="../team.html">Our Team</a>
 
 
 		<!--breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
 		<ul class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">PetPal Results</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../matched.html">PetPal Matched</a></li>
             <li><a href="#">Bio 01</a></li>
 		</ul>
 	</nav>
 
 	<article>
-        <table>
+        <table width=50%>
             <tr>
                 <td>
-                    <img src="Bio 01.jpeg" height="500px"/>
+                    <img src="../img/bio-01.jpg" height="500px"/>
                 </td>
                 <td>
                     <h1>Paprika</h1>
@@ -53,24 +53,29 @@
                     <p>Paprika may be an older cat, but her age doesn't stop her from enjoying life to the fullest! She is an outgoing, affectionate cat that would thrive with a family -- as long as she's the only pet!</p>
                 </td>
             </tr>
-        </table>
+		</table>
+		<h3>Javascript to do:</h3>
+		<ol>
+			<li>read parameter from url (bio may be from search or matched)</li>
+			<li>update breadcrumb</li>
+		</ol>
     </article>
 	<!--footer-->
     <br />
-    <footer>
+	<footer>
 		<a href="">
-			<i class="material-icons">mail_outline</i>
+			<i class='far fa-envelope fa-lg'></i>
 			Contact us
 		</a>
 		<span>Follow us</span>
-		<a href="">
-			<i class='fab fa-instagram'></i>
+		<a href="https://www.instagram.com/" target="_blank">
+			<i class='fab fa-instagram fa-lg'></i>
 		</a>
-		<a href="">
-			<i class='fab fa-facebook-square'></i>
+		<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
+			<i class='fab fa-facebook-square fa-lg'></i>
 		</a>
-		<a href="">
-			<i class='fab fa-twitter-square'></i>
+		<a href="https://www.twitter.com/" target="_blank">
+			<i class='fab fa-twitter-square fa-lg'></i>
 		</a>
 
 	</footer>

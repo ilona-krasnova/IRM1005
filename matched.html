@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+   
+<head>
+	<meta charset="utf-8">
+	<title>Mamba's Pet Rescue | Home</title>
+	<link rel="icon" type="image/icon" href="favicon.ico">
+	<!--css stylesheet will control fonts and their sizes, background colour, icon sizes etc-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+	<!--logo--> <!--set maxwidth for logo in css-->
+	<img id="logo" src="img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
+
+	<!-- navigation; add CSS to space out, make hoverable and add contrast to "urhere" id -->
+	<nav>
+		<a href="index.html">Home (PetPal)</a>
+		<a href="search.html">Cat-alogue Search</a>
+		<a href="faq.html">FAQ</a>
+		<a href="mission.html">Our Mission</a>
+		<a href="team.html">Our Team</a>
+
+
+		<!--breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
+		<ul class="breadcrumb">
+			<li><a href="">Home</a></li>
+			<li>Matched</li>
+		</ul>
+	</nav>
+
+	<article>
+     <p>Say "Hi" to the pets you matched! Click their names to learn more about them!</p>
+
+	<table>
+        <tr>
+            <td><img src="img/bio-01.jpg" height="100px"></td>
+            <td><a href="bios/bio 01.html?from=matched">Paprika</a></td>
+        </tr>
+        <tr>
+            <td><img src="img/bio-03.jpg" height="100px"></td>
+            <td><a href="bios/bio 03.html?from=matched">Miso</a></td>
+        </tr>
+        <tr>
+            <td><img src="img/bio-01.jpg" height="100px"></td>
+            <td><a href="bios/bio 01.html?from=matched">Paprika</a></td>
+        </tr>
+    </table>
+    <h3>Javascript: On page load</h3>
+    <ol>
+        <li>read list of matched pet IDs from cookie</li>
+        <li>extract information about these pets from database</li>
+        <li>insert information into html</li>
+    </ol>
+	</article>
+ 
+	<br />
+	<!--footer-->
+	<footer>
+		<a href="">
+			<i class='far fa-envelope fa-lg'></i>
+			Contact us
+		</a>
+		<span>Follow us</span>
+		<a href="https://www.instagram.com/" target="_blank">
+			<i class='fab fa-instagram fa-lg'></i>
+		</a>
+		<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
+			<i class='fab fa-facebook-square fa-lg'></i>
+		</a>
+		<a href="https://www.twitter.com/" target="_blank">
+			<i class='fab fa-twitter-square fa-lg'></i>
+		</a>
+
+	</footer>
+</body>
+
+</html>
