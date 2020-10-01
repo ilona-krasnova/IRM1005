@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Mamba's Pet Rescue | Cat-alogue Search</title>
+</head>
+
+<body>
+	<img id="logo" src="logo.png" alt="Mamba's Pet Rescue logo" width=50%>
+
+	<nav>
+		<a href="">Home (PetPal)</a>
+		<a id="urhere" href="">Cat-alogue Search</a>
+		<a href="">FAQ</a>
+		<a href="">Our Mission</a>
+		<a href="">Our Team</a>
+
+		<ul class="breadcrumb">
+			<li><a href="">Cat-alogue Search</a></li>
+		</ul>
+	</nav>
+<br />
+
+	<article>
+		<!--used html code from  https://www.w3schools.com/howto/howto_js_portfolio_filter.asp, will add css and javascript later-->
+		<table id="catalogue filters">
+				<tr>
+						<td>
+								<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+						</td>
+						<td>
+							<button class="btn" onclick="filterSelection('dogs')">Dogs</button><br />
+      				<button class="btn" onclick="filterSelection('cats')">Cats</button>
+						</td>
+						<td>
+      				<p>Sex</p>
+							<button class="btn" onclick="filterSelection('male')">Male</button><br />
+      				<button class="btn" onclick="filterSelection('female')">Female</button>
+						</td>
+						<td>
+      				<p>Age:</p>
+							<button class="btn" onclick="filterSelection('youth')">Youth</button><br />
+      				<button class="btn" onclick="filterSelection('adult')">Adult</button><br />
+      				<button class="btn" onclick="filterSelection('senior')">Senior</button>
+						</td>
+						<td>
+      				<p>Size:</p>
+							<button class="btn" onclick="filterSelection('small')">Small</button><br />
+      				<button class="btn" onclick="filterSelection('medium')">Medium</button><br />
+      				<button class="btn" onclick="filterSelection('large')">Large</button>
+						<td>
+							<p>Good with:</p>
+      				<button class="btn" onclick="filterSelection('GWdogs')">Dogs</button><br />
+      				<button class="btn" onclick="filterSelection('GWcats')">Cats</button><br />
+      				<button class="btn" onclick="filterSelection('GWchildren')">Children</button>
+						</td>
+						<td>
+							<p>Activity Level:</p>
+      				<button class="btn" onclick="filterSelection('low')">Low</button><br />
+      				<button class="btn" onclick="filterSelection('med')">Medium</button><br />
+				      <button class="btn" onclick="filterSelection('high')">High</button>
+						</td>
+					</tr>
+				</table>
+
+    <div class = "row">
+			<div class= "column dogs">
+				<div class= "content">
+					<img src="bio 08p.jpg" alt= "Bio 08 preview" height="250px" width="250px">
+					<p>Mamba</p>
+				</div>
+			</div>
+
+			<div class= "column cats">
+				<div class= "content">
+					<img src="bio 03p.jpg" alt= "Bio 03 preview" height="250px" width="250px">
+					<p>Miso</p>
+				</div>
+			</div>
+
+		</div>
+
+	<br />
+	<!--footer-->
+	<footer>
+		<a href="">
+			<i class="material-icons">mail_outline</i>
+			Contact us
+		</a>
+		<span>Follow us</span>
+		<a href="">
+			<i class='fab fa-instagram'></i>
+		</a>
+		<a href="">
+			<i class='fab fa-facebook-square'></i>
+		</a>
+		<a href="">
+			<i class='fab fa-twitter-square'></i>
+		</a>
+
+	</footer>
+</body>
+
+</html>
