@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mamba's Pet Rescue Adoption Form</title>
+ 
+</head>
+
+<body>
+	<img id="logo" src="logo.png" alt="Mamba's Pet Rescue logo" width=50%>
+
+	<nav>
+		<a id="urhere" href="">Home (PetPal)</a> 
+		<a href="">Cat-alogue Search</a>
+		<a href="">FAQ</a>
+		<a href="">Our Mission</a>
+		<a href="">Our Team</a>
+
+
+		<ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">PetPal Results</a></li>
+            <li><a href="#">Pet Biography</a></li>
+		</ul>
+
+	</nav>
+
+<h4>Learn More About Cash!</h4>
+
+<img src="https://lh5.googleusercontent.com/9qERl98IShAYccWSF6qZKexo5pOZ9uV9I8r8marIDaq6Qu8TNecq3aZuLbOZeSqLYRZKX1gwbOdFVQnqqbGlOjjeinDs5EUxVjUsyU3YrF0b_dhXXSUphCfn3Vap_KlFbgvZRfCd" " style="width: 120px; height: 100px">
+
+<p>Age: 5 <br>
+	<br>
+
+Time At Shelter: Febuary 27 2019<br>
+<br>
+
+Gender: Female <br>
+<br>
+
+Active: High <br>
+<br>
+
+Size: Small <br>
+<br>
+
+Children: Yes<br>
+<br>
+ </p>
+<textarea name="bio" rows="10" cols="25">Cash the cat is very gentle and friendly. She loves to stay active and can be quite the curious cat! She is very loving, just the right amount of cuddles will be enough to keep her happy. Although she is shy, a perfect family will be the key to get her to open up!</textarea>
+
+<footer>
+		<a href="">
+			<i class='far fa-envelope fa-lg'></i>
+			Contact us
+		</a>
+		<span>Follow us</span>
+		<a href="https://www.instagram.com/" target="_blank">
+			<i class='fab fa-instagram fa-lg'></i>
+		</a>
+		<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
+			<i class='fab fa-facebook-square fa-lg'></i>
+		</a>
+		<a href="https://www.twitter.com/" target="_blank">
+			<i class='fab fa-twitter-square fa-lg'></i>
+		</a>
+
+	</footer>
+
+
+</body>
+</html>
