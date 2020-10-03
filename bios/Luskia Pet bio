@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mamba's Pet Rescue Adoption Form</title>
+ 
+</head>
+
+<body>
+	<img id="logo" src="logo.png" alt="Mamba's Pet Rescue logo" width=50%>
+
+	<nav>
+		<a id="urhere" href="">Home (PetPal)</a> 
+		<a href="">Cat-alogue Search</a>
+		<a href="">FAQ</a>
+		<a href="">Our Mission</a>
+		<a href="">Our Team</a>
+
+
+		<ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">PetPal Results</a></li>
+            <li><a href="#">Pet Biography</a></li>
+		</ul>
+
+	</nav>
+
+<h4>Learn More About Simba!</h4>
+
+<img src="https://lh6.googleusercontent.com/deTyNWN4axygK5SF62JxBInQOjDKzMmDcCq31blxWhK2TEsoxOYZufmS2gDz5kPg4YeitIkdZWqND7ifAwAhoheP2RA0wtssq5jkd4KOefz-Cza9e5oMa1ttMmLZ16TgPYXDMKEj" " style="width: 100px; height: 100px">
+
+<p>Age: 4 <br>
+	<br>
+
+Time At Shelter: September 26 2020<br>
+<br>
+
+Gender: Female <br>
+<br>
+
+Active: Medium <br>
+<br>
+
+Size: Medium <br>
+<br>
+
+Children: Yes<br>
+<br>
+ </p>
+<textarea name="bio" rows="10" cols="25">Simba is an energetic and playful who enjoys being the centre of attention. She loves being around many people and will instantly light up a room. All she needs is a loving family that can keep up with her uplifting and cheerful energy!</textarea>
+
+<footer>
+		<a href="">
+			<i class='far fa-envelope fa-lg'></i>
+			Contact us
+		</a>
+		<span>Follow us</span>
+		<a href="https://www.instagram.com/" target="_blank">
+			<i class='fab fa-instagram fa-lg'></i>
+		</a>
+		<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
+			<i class='fab fa-facebook-square fa-lg'></i>
+		</a>
+		<a href="https://www.twitter.com/" target="_blank">
+			<i class='fab fa-twitter-square fa-lg'></i>
+		</a>
+
+	</footer>
+
+</body>
+</html>
