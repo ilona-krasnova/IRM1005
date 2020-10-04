@@ -8,6 +8,7 @@
 </head>
 
 <body>
+	<img id="logo" src="img/logo.png" alt="Mamba's Pet Rescue Logo" width="300px"/>
 
 	<nav>
 		<a href="index.html">Home (PetPal)</a>
@@ -17,12 +18,26 @@
 		<a href="team.html">Our Team</a>
 	</nav>
 
-	
+<section>
 
+	<img id="img/bio-06.jpg" alt="Coco" height="500px"/>
 
+	<h1>Coco</h1>
+	<P>
+		Age: 5 months<br/>
+		Sex: Male<br/>
+		<form>
+		Good with:<br/>
+		<input type="checkbox" name="Goodwith" value="Children"Checked/>Children<br/>
+		<input type="checkbox" name="Goodwith" Value="Cats"Disabled/>Cats<br/>
+		<input type="checkbox" name="Goodwith" value="Dogs"Disabled/>Dogs<br/>
+	</form><br/>
 
+		Activity: High<br/>
+		Size: Small<br/>
 
-
+		Coco loves to reveive lots of attention and love! Coco's favourite things are going to the park and going for walks. Make sure that he has enough toys to play with, because he likes to spend most of his time playing. 
+	</P>
 
 <footer>
 		<a href="faq.html">
