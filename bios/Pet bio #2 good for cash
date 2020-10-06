@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+   
+<head>
+	<meta charset="utf-8">
+	<title>Mamba's Pet Rescue | Cash</title>
+	<link rel="icon" type="image/icon" href="favicon.ico">
+	<!--css stylesheet will control fonts and their sizes, background colour, icon sizes etc-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+	<img id="logo" src="../img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
+
+	<nav>
+		<a href="../index.html">Home (PetPal)</a>
+		<a href="../search.html">Cat-alogue Search</a>
+		<a href="../faq.html">FAQ</a>
+		<a href="../mission.html">Our Mission</a>
+		<a href="../team.html">Our Team</a>
+
+
+		<ul class="breadcrumb">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../matched.html">Cat-olgue</a></li>
+            <li><a href="#">Bio For Cash</a></li>
+		</ul>
+	</nav>
+
+
+
+ <article>
+        <table>
+            <tr>
+                <td>
+                    <img src= "https://lh5.googleusercontent.com/9qERl98IShAYccWSF6qZKexo5pOZ9uV9I8r8marIDaq6Qu8TNecq3aZuLbOZeSqLYRZKX1gwbOdFVQnqqbGlOjjeinDs5EUxVjUsyU3YrF0b_dhXXSUphCfn3Vap_KlFbgvZRfCd" height="400" width="400"/>
+                </td>
+                <td>
+                    <h1>Cash</h1>
+                    <p>Age: 5</p>
+                    <p>Sex: F</p>
+										<p>Good with: <br />
+                        &#9745; Children <br />
+                        &#9745; Cats <br />
+                        &#9745; Dogs <br />
+                        <br />
+                        Activity: High<br />
+                        Size: Small <br />
+                    </p>
+										<p>Time at Shelter: Febuary 27 2019</p>
+                    <p>Cash the cat is very gentle and friendly. She loves to stay active and can be quite the curious cat! She is very loving, just the right amount of cuddles will be enough to keep her happy. Although she is shy, a perfect family will be the key to get her to open up!</p>
+                </td>
+            </tr>
+        </table>
+    </article>
+ </p>
+
+
+<footer>
+		<a href="">
+			<i class='far fa-envelope fa-lg'></i>
+			Contact us
+		</a>
+		<span>Follow us</span>
+		<a href="https://www.instagram.com/" target="_blank">
+			<i class='fab fa-instagram fa-lg'></i>
+		</a>
+		<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
+			<i class='fab fa-facebook-square fa-lg'></i>
+		</a>
+		<a href="https://www.twitter.com/" target="_blank">
+			<i class='fab fa-twitter-square fa-lg'></i>
+		</a>
+
+	</footer>
+
+
+</body>
+</html>
