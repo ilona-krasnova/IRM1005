@@ -27,78 +27,85 @@
 	</nav>
 <br />
 
-	<article>
-		<!--used html code from  https://www.w3schools.com/howto/howto_js_portfolio_filter.asp, will add css and javascript later-->
+<article>
+	<fieldset>
+		<legend>Filters</legend>
+	<form>
 		<table id="catalogue filters">
-				<tr>
-						<td>
-								<button class="btn active" onclick="filterSelection('all')"> Show all</button>
-						</td>
-						<td>
-							<button class="btn" onclick="filterSelection('dogs')">Dogs</button><br />
-      				<button class="btn" onclick="filterSelection('cats')">Cats</button>
-						</td>
-						<td>
-      				<p>Sex</p>
-							<button class="btn" onclick="filterSelection('male')">Male</button><br />
-      				<button class="btn" onclick="filterSelection('female')">Female</button>
-						</td>
-						<td>
-      				<p>Age:</p>
-							<button class="btn" onclick="filterSelection('youth')">Youth</button><br />
-      				<button class="btn" onclick="filterSelection('adult')">Adult</button><br />
-      				<button class="btn" onclick="filterSelection('senior')">Senior</button>
-						</td>
-						<td>
-      				<p>Size:</p>
-							<button class="btn" onclick="filterSelection('small')">Small</button><br />
-      				<button class="btn" onclick="filterSelection('medium')">Medium</button><br />
-      				<button class="btn" onclick="filterSelection('large')">Large</button>
-						<td>
-							<p>Good with:</p>
-      				<button class="btn" onclick="filterSelection('GWdogs')">Dogs</button><br />
-      				<button class="btn" onclick="filterSelection('GWcats')">Cats</button><br />
-      				<button class="btn" onclick="filterSelection('GWchildren')">Children</button>
-						</td>
-						<td>
-							<p>Activity Level:</p>
-      				<button class="btn" onclick="filterSelection('low')">Low</button><br />
-      				<button class="btn" onclick="filterSelection('med')">Medium</button><br />
-				      <button class="btn" onclick="filterSelection('high')">High</button>
-						</td>
-					</tr>
-				</table>
-
-    <div class = "row">
-			<div class= "column cats">
-				<div class= "content">
-					<img src="img/bio-01p.jpg" alt= "Bio 01 preview" height="250px" width="250px">
-					<a href="bios/bio 01.html?from=matched">Paprika</a>
-				</div>
+			<tr>
+					<td>
+							<button type= "button" onclick="alert('insert javascript later')"> Show all</button>
+					</td>
+					<td>
+						<input type= "radio" name= "pettype" value= "dogs">Dogs<br />
+						<input type= "radio" name= "pettype" value= "cats">Cats</button>
+					</td>
+					<td>
+						<p>Sex:</p>
+						<input type= "checkbox" name= "sex" value= "male">Male<br />
+						<input type= "checkbox" name= "sex" value= "female">Female
+					</td>
+					<td>
+						<p>Age:<p/>
+						<input type= "number" id= "age" name= "age" />
+					</td>
+					<td>
+						<p>Size:</p>
+						<select name= "size">
+							<option value= "small">Small</options>
+							<option value= "medium">Medium</options>
+							<option value= "large">Large</options>
+						</select>
+					<td>
+						<p>Good with:</p>
+						<input type= "checkbox" name= "goodw" value= "dogs">Dog<br />
+						<input type= "checkbox" name= "goodw" value= "cats">Cats<br />
+						<input type= "checkbox" name= "goodw" value= "children">Children
+					</td>
+					<td>
+						<p>Activity Level:</p>
+						<select name= "size">
+							<option value= "low">Low</options>
+							<option value= "medium">Medium</options>
+							<option value= "high">High</options>
+						</select>
+					</td>
+					<td>
+						<h6>Search by Pet Name</h6>
+						<input list= "petname"/>
+							<datalist id= "petname">
+								<option value= "Paprika"/>
+								<option value= "Charlie"/>
+								<option value= "Miso"/>
+								<option value= "Simba"/>
+								<option value= "Cash"/>
+								<option value= "Coco"/>
+								<option value= "Winston"/>
+								<option value= "Mamba"/>
+							</datalist>
+					</td>
+					<td>
+						<input type= "submit" value="submit"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+		</fieldset>
+		<div class = "row">
+			<div class= "content">
+				<img src="img/bio-01p.jpg" alt= "Bio 01 preview" height="250px" width="250px">
+				<a href="bios/bio 01.html?from=matched">Paprika</a>
 			</div>
-			<div class= "column dogs">
-				<div class= "content">
-					<img src="img/bio-02p.jpg" alt= "Bio 02 preview" height="250px" width="250px">
-					<a href="bios/bio 02.html?from=matched">Charlie</a>
-				</div>
 			</div>
-			<div class= "column cats">
-				<div class= "content">
-					<img src="img/bio-03p.jpg" alt= "Bio 03 preview" height="250px" width="250px">
-					<a href="bios/bio 03.html?from=matched">Miso</a>
-				</div>
+			<div class= "content">
+				<img src="img/bio-02p.jpg" alt= "Bio 02 preview" height="250px" width="250px">
+				<a href="bios/bio 02.html?from=matched">Charlie</a>
 			</div>
-			<div class= "column dogs">
-				<div class= "content">
-					<img src="img/bio-06p.jpg" alt= "Bio 06 preview" height="250px" width="250px">
-					<a href="bios/bio 06.html?from=matched">Coco</a>
-				</div>
-			<div class= "column cats">
-				<div class= "content">
-					<img src="img/bio-07p.jpg" alt= "Bio 07 preview" height="250px" width="250px">
-					<a href="bios/bio 07.html?from=matched">Winston</a>
-				</div>
+			<div class= "content">
+				<img src="img/bio-03p.jpg" alt= "Bio 03 preview" height="250px" width="250px">
+				<a href="bios/bio 03.html?from=matched">Miso</a>
 			</div>
+<<<<<<< HEAD
 			<div class= "column dogs">
 				<div class= "content">
 					<img src="img/bio-08p.jpg" alt= "Bio 08 preview" height="250px" width="250px">
@@ -114,10 +121,29 @@
 				</div>
 
 				</div>
+=======
+			<div class= "content">
+				<img src="img/bio-04p.jpg" alt= "Bio 04 preview" height="250px" width="250px">
+				<a href="bios/bio-04.html?from=matched">Simba</a>
 			</div>
-
+			<div class= "content">
+				<img src="img/bio-05p.jpg" alt= "Bio 05 preview" height="250px" width="250px">
+				<a href="bios/bio-05.html?from=matched">Cash</a>
+			</div>
+			<div class= "content">
+				<img src="img/bio-06p.jpg" alt= "Bio 06 preview" height="250px" width="250px">
+				<a href="bios/bio 06.html?from=matched">Coco</a>
+			</div>
+			<div class= "content">
+				<img src="img/bio-07p.jpg" alt= "Bio 07 preview" height="250px" width="250px">
+				<a href="bios/bio 07.html?from=matched">Winston</a>
+			</div>
+			<div class= "content">
+				<img src="img/bio-08p.jpg" alt= "Bio 08 preview" height="250px" width="250px">
+				<a href="bios/bio 08.html?from=matched">Mamba</a>
+>>>>>>> 7a4dcc4771c5622e5103320a151e9c6ecfc017a6
+			</div>
 		</div>
-
 	<br />
 	<!--footer-->
 	<footer>
