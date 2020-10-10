@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Mamba's Pet Rescue | Paprika</title>
-	<link rel="icon" type="image/icon" href="favicon.ico">
+	<link rel="icon" type="image/icon" href="../favicon.ico">
 	<!--css stylesheet will control fonts and their sizes, background colour, icon sizes etc-->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -29,12 +29,12 @@
 		<ul class="breadcrumb">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../matched.html">PetPal Matched</a></li>
-            <li><a href="#">Bio 01</a></li>
+            <li><a href="#">Paprika</a></li>
 		</ul>
 	</nav>
 
 	<article>
-        <table width=50%>
+        <table>
             <tr>
                 <td>
                     <img src="../img/bio-01.jpg" height="500px"/>
@@ -61,11 +61,73 @@
 			<li>read parameter from url (bio may be from search or matched)</li>
 			<li>update breadcrumb</li>
 		</ol>
-    </article>
+	</article>
+	<!-- appendix for grading purposes :)-->
+	<aside>
+		<hr />
+		<h3>Appendix for grading: Survey</h3>
+		<audio controls>
+			<source src="../media/ilona.mp3" type="audio/mpeg" />
+			Hi, welcome to Mamba's Pet Rescue! Please fill out the survey below.
+		</audio>
+		<br /> <br />
+		<form action="action_page.php">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label for="firstname">First name:</label><br/>
+				<input id="firstname" type="text" name="firstname" value="" />
+				<br/>
+				<label for="lastname">Last name:</label><br/>
+				<input id="lastname" type="text" name="lastname" value="">
+			</fieldset>
+			<fieldset>
+				<legend>Household Information</legend>
+				<p><label for="residence-input">Residence type</label></p>
+				<input id="residence-input" list="residence" />
+					<datalist id="residence">
+						<option value="House"/>
+						<option value="Apartment"/>
+					</datalist>
+				</input>
+				<br />
+				<p>Location</p>
+				<select name="cars">
+					<option value="urban">Urban</option>
+					<option value="suburb">Subruban</option>
+					<option value="rural">Rural</option>
+				</select>
+				<p>Does your household have</p>
+				<input type="checkbox" name="children" value="children" />Children<br/> 
+				<input type="checkbox" name="cats" value="cats" />Cats<br/> 
+				<input type="checkbox" name="dogs" value="dogs" />Dogs<br/> 
+				<input type="checkbox" name="other-animals" value="other-animals" />Other animals<br/> 
+				<p><label for="fam">How many family members?</label></p>
+				<input type="number" id="fam" name="fam" value="1" />
+				<p><label for="pet">How many pets?</label></p>
+				<input type="number" id="pet" name="pets" value="0" />
+
+			</fieldset>
+			<fieldset>
+				<legend>Commitment</legend>
+				<p>How much time do you spend at home?</p>
+				I'm never home
+				<input type="range" id="a" name="a" value="50" />
+				I'm always home
+				<br />
+				<p><label for="message">Tell us about yourself!</label></p>
+				<textarea id="message" name="message" rows="10" cols="32" placeholder="In detail!"></textarea>
+			</fieldset>
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Erase All">
+		</form>
+	<h3>Paprika's Favourite YouTube Channel:</h3>
+	<!--copied from YouTube.-->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/_5RTDozH5xg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</aside>
 	<!--footer-->
     <br />
 	<footer>
-		<a href="">
+		<a href="../contact.html">
 			<i class='far fa-envelope fa-lg'></i>
 			Contact us
 		</a>
@@ -79,7 +141,6 @@
 		<a href="https://www.twitter.com/" target="_blank">
 			<i class='fab fa-twitter-square fa-lg'></i>
 		</a>
-
 	</footer>
 </body>
 
