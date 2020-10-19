@@ -12,65 +12,65 @@
 </head>
 
 <body>
-	<img id="logo" src="../img/logo.png" alt="Mamba's Pet Rescue logo" width=50%>
+	<div class= "mainbody">
+		<img id="logo" src="../img/logo.png" alt="Mamba's Pet Rescue logo" >
 
-	<nav>
-		<a href="../index/index.html">Home (PetPal)</a>
-		<a href="../search/search.html">Cat-alogue Search</a>
-		<a href="../faq/faq.html">FAQ</a>
-		<a href="../mission/mission.html">Our Mission</a>
-		<a href="../team/team.html">Our Team</a>
-
-		<ul class="breadcrumb">
-			<li><a href="../search/search.html">Cat-alogue Search</a></li>
-		</ul>
-	</nav>
-<br />
-
-<article>
-	<fieldset>
-		<legend>Filters</legend>
-	<form>
-		<table id="catalogue filters">
-			<tr>
-					<td>
+		<nav >
+			<div id= "menu" class= "center">
+				<a href="../index/index.html" class= "links">Home (PetPal) </a>
+				<a href="../search/search.html" class= "links" >Cat-alogue Search</a>
+				<a href="../faq/faq.html" class= "links">FAQ</a>
+				<a href="../mission/mission.html" class= "links">Our Mission</a>
+				<a href="../team/team.html" class= "links">Our Team</a>
+			</div>
+				<ul class= "breadcrumb">
+					<li><a href="../search/search.html">Cat-alogue Search</a></li>
+				</ul>
+		</nav>
+		<br />
+		<fieldset class= "center">
+			<form>
+				<legend>Filters</legend>
+				<div id="filters">
+					<span>
 							<button type= "button" onclick="alert('insert javascript later')"> Show all</button>
-					</td>
-					<td>
+					</span>
+					<span>
 						<input type= "radio" name= "pettype" value= "dogs">Dogs<br />
 						<input type= "radio" name= "pettype" value= "cats">Cats</button>
-					</td>
-					<td>
+					</span>
+					<span>
 						<p>Sex:</p>
 						<input type= "checkbox" name= "sex" value= "male">Male<br />
 						<input type= "checkbox" name= "sex" value= "female">Female
-					</td>
-					<td>
+					</span>
+					<span>
 						<p>Age:<p/>
 						<input type= "number" id= "age" name= "age" />
-					</td>
-					<td>
+					</span>
+					<span>
 						<p>Size:</p>
 						<select name= "size">
 							<option value= "small">Small</options>
 							<option value= "medium">Medium</options>
 							<option value= "large">Large</options>
 						</select>
-					<td>
+					</span>
+					<span>
 						<p>Good with:</p>
 						<input type= "checkbox" name= "goodw" value= "dogs">Dog<br />
 						<input type= "checkbox" name= "goodw" value= "cats">Cats<br />
 						<input type= "checkbox" name= "goodw" value= "children">Children
-					</td>
-					<td>
+					</span>
+					<span>
 						<p>Activity Level:</p>
 						<select name= "size">
 							<option value= "low">Low</options>
 							<option value= "medium">Medium</options>
 							<option value= "high">High</options>
 						</select>
-					</td>
-					<td>
+					</span>
+					<span>
 						<h6>Search by Pet Name</h6>
 						<input list= "petname"/>
 							<datalist id= "petname">
@@ -83,68 +83,102 @@
 								<option value= "Winston"/>
 								<option value= "Mamba"/>
 							</datalist>
-					</td>
-					<td>
+					</span>
+					<span>
 						<input type= "submit" value="submit"/>
-					</td>
-				</tr>
-			</table>
-		</form>
+					</span>
+				</div>
+			</form>
 		</fieldset>
-		<div class = "row">
-			<div class= "content">
-				<img src="../search/bio-01p.jpg" alt= "Bio 01 preview" height="250px" width="250px">
-				<a href="bios/bio-01.html?from=matched">Paprika</a>
+		<br />
+		<div class = "center row">
+			<div class= "column">
+				<div class= "content">
+					<img src="../search/bio-01p.jpg" alt= "Bio 01 preview" height="250px" width="250px">
+					<br />
+					<a href="bios/bio-01.html?from=matched" class= "pet">Paprika</a>
+				</div>
 			</div>
+			<div class= "column">
+				<div class= "content">
+					<img src="../search/bio-02p.jpg" alt= "Bio 02 preview" height="250px" width="250px">
+					<br />
+					<a href="bios/bio-02.html?from=matched" class= "pet">Charlie</a>
+				</div>
 			</div>
-			<div class= "content">
-				<img src="../search/bio-02p.jpg" alt= "Bio 02 preview" height="250px" width="250px">
-				<a href="bios/bio-02.html?from=matched">Charlie</a>
+			<div class= "column">
+				<div class= "content">
+					<img src="../search/bio-03p.jpg" alt= "Bio 03 preview" height="250px" width="250px">
+					<br />
+					<a href="bios/bio-03.html?from=matched" class= "pet">Miso</a>
+				</div>
 			</div>
-			<div class= "content">
-				<img src="../search/bio-03p.jpg" alt= "Bio 03 preview" height="250px" width="250px">
-				<a href="bios/bio-03.html?from=matched">Miso</a>
+			<div class= "column">
+				<div class= "content">
+					<img src="../search/bio-04p.jpg" alt= "Bio 04 preview" height="250px" width="250px">
+					<br />
+					<a href="bios/bio-04.html?from=matched" class= "pet">Simba</a>
+				</div>
 			</div>
-			<div class= "content">
-				<img src="../search/bio-04p.jpg" alt= "Bio 04 preview" height="250px" width="250px">
-				<a href="bios/bio-04.html?from=matched">Simba</a>
+			<div class= "column">
+				<div class= "content">
+					<img src="../search/bio-05p.jpg" alt= "Bio 05 preview" height="250px" width="250px">
+					<br />
+					<a href="bios/bio-05.html?from=matched" class= "pet">Cash</a>
+				</div>
 			</div>
-			<div class= "content">
-				<img src="../search/bio-05p.jpg" alt= "Bio 05 preview" height="250px" width="250px">
-				<a href="bios/bio-05.html?from=matched">Cash</a>
+			<div class= "column">
+				<div class= "content">
+					<img src="../search/bio-06p.jpg" alt= "Bio 06 preview" height="250px" width="250px">
+					<br />
+					<a href="bios/bio-06.html?from=matched" class= "pet">Coco</a>
+				</div>
 			</div>
-			<div class= "content">
-				<img src="../search/bio-06p.jpg" alt= "Bio 06 preview" height="250px" width="250px">
-				<a href="bios/bio-06.html?from=matched">Coco</a>
+			<div class= "column">
+				<div class= "content">
+					<img src="../search/bio-07p.jpg" alt= "Bio 07 preview" height="250px" width="250px">
+					<br />
+					<a href="bios/bio-07.html?from=matched" class= "pet">Winston</a>
+				</div>
 			</div>
-			<div class= "content">
-				<img src="../search/bio-07p.jpg" alt= "Bio 07 preview" height="250px" width="250px">
-				<a href="bios/bio-07.html?from=matched">Winston</a>
-			</div>
-			<div class= "content">
-				<img src="../search/bio-08p.jpg" alt= "Bio 08 preview" height="250px" width="250px">
-				<a href="bios/bio-08.html?from=matched">Mamba</a>
+			<div class= "column">
+				<div class= "content">
+					<img src="../search/bio-08p.jpg" alt= "Bio 08 preview" height="250px" width="250px">
+					<br />
+					<a href="bios/bio-08.html?from=matched" class= "pet">Mamba</a>
+				</div>
 			</div>
 		</div>
-	<br />
-	<!--footer-->
-	<footer>
-		<a href="../contact/contact.html">
-			<i class='far fa-envelope fa-lg'></i>
-			Contact us
-		</a>
-		<span>Follow us</span>
-		<a href="https://www.instagram.com/" target="_blank">
-			<i class='fab fa-instagram fa-lg'></i>
-		</a>
-		<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
-			<i class='fab fa-facebook-square fa-lg'></i>
-		</a>
-		<a href="https://www.twitter.com/" target="_blank">
-			<i class='fab fa-twitter-square fa-lg'></i>
-		</a>
-
-	</footer>
+	</div>
+	<div id= "footer">
+		<ul id= "stay_in_line">
+			<li class= "footer links">
+				<a href="../contact/contact.html" class= "links">
+					<i class='far fa-envelope fa-lg'></i>
+					Contact us
+				</a>
+			<li class= "footer">
+				<div class= "links">
+					Follow us
+				</div>
+			</li>
+			<li class= "footer">
+				<a href="https://www.instagram.com/" target="_blank" class= "links">
+					<i class='fab fa-instagram fa-lg'></i>
+				</a>
+			</li>
+			<li class= "footer">
+				<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank" class= "links">
+					<i class='fab fa-facebook-square fa-lg'></i>
+				</a>
+			</li>
+			<li class= "footer">
+				<a href="https://www.twitter.com/" target="_blank" class= "links">
+					<i class='fab fa-twitter-square fa-lg'></i>
+				</a>
+			</li>
+		</ul>
+	</div>
 </body>
 
 </html>

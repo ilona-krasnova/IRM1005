@@ -1,0 +1,144 @@
+#logo
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color:rgb(242, 234, 223);
+	font-family: HKGrotesk-Regular;
+	font-size: 200%;
+}
+
+@font-face
+{
+  font-family: HKGrotesk-Regular;
+  src: url(HKGrotesk-Regular.otf);
+}
+
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: auto;
+}
+
+.links
+{
+  padding: 2.5%;
+  color: rgb(191, 78, 78);
+  font-size: 0.75em;
+}
+
+a:hover
+{
+color: rgb(217, 142, 126);
+}
+
+#menu
+{
+  border-radius: 25px;
+  background: rgb(217, 167, 150);
+  padding: 20px;
+  text-align: center;
+}
+
+ul.breadcrumb li
+{
+  display: inline;
+}
+
+ul.breadcrumb li+li:before
+{
+  padding: 8px;
+  content: "/\00a0";
+}
+
+fieldset
+{
+  background-color: rgb(206, 111, 31);
+  font-size: 0.5em;
+  padding-bottom: 2em;
+}
+
+legend
+{
+  font-family: Mansalva-Regular;
+  font-size: 300%;
+}
+
+@font-face
+{
+font-family: Mansalva-Regular;
+src: url(Mansalva-Regular.ttf);
+}
+
+#filters
+{
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+span
+{
+  display: table-cell;
+  text-align: center;
+}
+
+.column
+{
+  float: left;
+  width: 30%;
+}
+
+.row,
+.row > .column {
+  padding: 15px;
+}
+
+.content
+{
+  background-color: rgb(191, 78, 78);
+  padding: 10px;
+  text-align: center;
+}
+
+.pet
+{
+  color: rgb(217, 167, 150);
+  font-family: Mansalva-Regular;
+}
+
+.mainbody
+{
+
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+#footer
+{
+  background: rgb(217, 167, 150);
+}
+
+#stay_in_line
+{
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.footer
+{
+  display: inline-block;
+}
