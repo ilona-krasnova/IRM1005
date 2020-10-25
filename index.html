@@ -13,84 +13,88 @@
 </head>
 
 <body>
-	<!--logo--> <!--set maxwidth for logo in css-->
-	<img id="logo" src="img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
+	<main>
+		<!--logo--> <!--set maxwidth for logo in css-->
+		<img id="logo" src="img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
 
-	<!-- navigation; add CSS to space out, make hoverable and add contrast to "urhere" id -->
-	<nav>
-		<a class="urhere" href="">Home (PetPal)</a>
-		<a href="search.html">Cat-alogue Search</a>
-		<a href="faq.html">FAQ</a>
-		<a href="mission.html">Our Mission</a>
-		<a href="team.html">Our Team</a>
-
-
-		<!--breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
-		<ul class="breadcrumb">
-			<li><a href="">Home</a></li>
-		</ul>
-	</nav>
-
-	<article>
-		<p>Welcome to Mamba's Pet Rescue! Find your perfect match with PetPal below!</p>
-		<div>
-			<form>
-				<span>I am looking for a:</span>
-				<input name=pettype type="radio" value="cat" checked="checked">cat</input>	
-				<input name=pettype type="radio" value="dog">dog</input>
-			</form>
-		</div>	
-		<br />
-		<!--Petpal function will go here. image is a placeholder.-->
-		<img src="img/bio-01.jpg" width="400px"/>
-		<br/>
-		<div>
-			<!---->
-			<button type="button" onclick="if (confirm('View matched pets or click cancel to continue looking!')) {location='matched.html';}">Like! <i class='fas fa-heart'></i></button>
-			<button type="button" onclick="alert('todo: show next profile')">Not for me! <i class="fas fa-refresh"></i></button>
-		</div>
-		<br />
-		<a href="matched.html">My matches</a>
-		<h3>Javascript: </h3>
-		<h4>On load</h4>
-		<ol>
-			<li>select: </li>
-			<ul>
-			<li>cat</li>
-			<li>dog</li>
+		<!-- navigation; add CSS to space out, make hoverable and add contrast to "urhere" id -->
+		<nav>
+			<a class="urhere" href="">Home</a>
+			<a href="search.html">Cat-alogue Search</a>
+			<a href="faq.html">FAQ</a>
+			<a href="mission.html">Our Mission</a>
+			<a href="team.html">Our Team</a>
+		</nav>
+			<!--breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
+			<ul class="breadcrumb">
+				<li><a href="">Home</a></li>
 			</ul>
-			<li>load oldest profile</li>
-		</ol>
-		<h4>On "like" press:</h4>
-		<ol>
-			<li>save pet id to cookie</li>
-			<li>ask to go to matched list or continue searching</li>
-		</ol>
-		<h4>On "not for me" press</h4>
-		<ol>
-			<li>select next id</li>
-			<li>load profile</li>
-		</ol>
-	</article>
- 
-	<br />
-	<!--footer-->
-	<footer>
-		<a href="contact.html">
-			<i class='far fa-envelope fa-lg'></i>
-			Contact us
-		</a>
-		<span>Follow us</span>
-		<a href="https://www.instagram.com/" target="_blank">
-			<i class='fab fa-instagram fa-lg'></i>
-		</a>
-		<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
-			<i class='fab fa-facebook-square fa-lg'></i>
-		</a>
-		<a href="https://www.twitter.com/" target="_blank">
-			<i class='fab fa-twitter-square fa-lg'></i>
-		</a>
-	</footer>
+
+
+		<article>
+			<p>Welcome to Mamba's Pet Rescue! Find your perfect match with PetPal below!</p>
+			<div>
+				<form>
+					<span>I am looking for a:</span>
+					<input name=pettype type="radio" value="cat" checked="checked">cat</input>	
+					<input name=pettype type="radio" value="dog">dog</input>
+				</form>
+			</div>	
+			<br />
+			<!--Petpal function will go here. image is a placeholder.-->
+			<img src="img/bio-01.jpg" width="400px"/>
+			<br/>
+			<div>
+				<!---->
+				<button type="button" onclick="if (confirm('View matched pets or click cancel to continue looking!')) {location='matched.html';}">Like! <i class='fas fa-heart'></i></button>
+				<button type="button" onclick="alert('todo: show next profile')">Not for me! <i class="fas fa-refresh"></i></button>
+				<a href="matched.html"><button>My matches</button></a>
+			</div>
+			<h3>Javascript: </h3>
+			<h4>On load</h4>
+			<ol>
+				<li>select: </li>
+				<ul>
+				<li>cat</li>
+				<li>dog</li>
+				</ul>
+				<li>load oldest profile</li>
+			</ol>
+			<h4>On "like" press:</h4>
+			<ol>
+				<li>save pet id to cookie</li>
+				<li>ask to go to matched list or continue searching</li>
+			</ol>
+			<h4>On "not for me" press</h4>
+			<ol>
+				<li>select next id</li>
+				<li>load profile</li>
+			</ol>
+		</article>
+	
+		<br />
+		<!--footer-->
+		<footer>
+			<span class="fleft">
+				<a href="../contact.html">
+					<i class='far fa-envelope fa-2x'></i>
+					Contact Us
+				</a>
+			</span>
+			<span class="fright">
+				<span>Follow Us</span>
+				<a href="https://www.instagram.com/" target="_blank">
+					<i class='fab fa-instagram fa-2x'></i>
+				</a>
+				<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
+					<i class='fab fa-facebook-square fa-2x'></i>
+				</a>
+				<a href="https://www.twitter.com/" target="_blank">
+					<i class='fab fa-twitter-square fa-2x'></i>
+				</a>
+			</span>
+		</footer>
+	</main>
 </body>
 
 </html>

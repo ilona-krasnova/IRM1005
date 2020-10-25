@@ -13,68 +13,73 @@
 </head>
 
 <body>
-	<!--logo--> <!--set maxwidth for logo in css-->
-	<img id="logo" src="img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
+	<main>
+		<!--logo--> <!--set maxwidth for logo in css-->
+		<img id="logo" src="img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
 
-	<!-- navigation; add CSS to space out, make hoverable and add contrast to "urhere" id -->
-	<nav>
-		<a href="index.html">Home (PetPal)</a>
-		<a href="search.html">Cat-alogue Search</a>
-		<a href="faq.html">FAQ</a>
-		<a href="mission.html">Our Mission</a>
-		<a href="team.html">Our Team</a>
+		<!-- navigation; add CSS to space out, make hoverable and add contrast to "urhere" id -->
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="search.html">Cat-alogue Search</a>
+			<a href="faq.html">FAQ</a>
+			<a href="mission.html">Our Mission</a>
+			<a href="team.html">Our Team</a>
+			<br />
+		</nav>
+			<!--breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
+			<ul class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">PetPal Matched</a></li>
+			</ul>
 
+		<article>
+		<p>Say "Hi" to the pets you matched! Click their names to learn more about them!</p>
 
-		<!--breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
-		<ul class="breadcrumb">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="">PetPal Matched</a></li>
-		</ul>
-	</nav>
-
-	<article>
-     <p>Say "Hi" to the pets you matched! Click their names to learn more about them!</p>
-
-	<table>
-        <tr>
-            <td><img src="img/bio-01p.jpg" height="250px"></td>
-            <td><a href="bios/bio-01.html?from=matched">Paprika</a></td>
-        </tr>
-        <tr>
-            <td><img src="img/bio-03p.jpg" height="250px"></td>
-            <td><a href="bios/bio-03.html?from=matched">Miso</a></td>
-        </tr>
-        <tr>
-            <td><img src="img/bio-05p.jpg" height="250px"></td>
-            <td><a href="bios/bio-05.html?from=matched">Cash</a></td>
-        </tr>
-    </table>
-    <h3>Javascript: On page load</h3>
-    <ol>
-        <li>read list of matched pet IDs from cookie</li>
-        <li>extract information about these pets from database</li>
-        <li>insert information into html</li>
-    </ol>
-	</article>
- 
-	<br />
-	<!--footer-->
-	<footer>
-		<a href="contact.html">
-			<i class='far fa-envelope fa-lg'></i>
-			Contact us
-		</a>
-		<span>Follow us</span>
-		<a href="https://www.instagram.com/" target="_blank">
-			<i class='fab fa-instagram fa-lg'></i>
-		</a>
-		<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
-			<i class='fab fa-facebook-square fa-lg'></i>
-		</a>
-		<a href="https://www.twitter.com/" target="_blank">
-			<i class='fab fa-twitter-square fa-lg'></i>
-		</a>
-	</footer>
+		<table>
+			<tr>
+				<td><img src="img/bio-01p.jpg" height="250px"></td>
+				<td><a href="bios/bio-01.html?from=matched">Paprika</a></td>
+			</tr>
+			<tr>
+				<td><img src="img/bio-03p.jpg" height="250px"></td>
+				<td><a href="bios/bio-03.html?from=matched">Miso</a></td>
+			</tr>
+			<tr>
+				<td><img src="img/bio-05p.jpg" height="250px"></td>
+				<td><a href="bios/bio-05.html?from=matched">Cash</a></td>
+			</tr>
+		</table>
+		<h3>Javascript: On page load</h3>
+		<ol>
+			<li>read list of matched pet IDs from cookie</li>
+			<li>extract information about these pets from database</li>
+			<li>insert information into html</li>
+		</ol>
+		</article>
+	
+		<br />
+		<!--footer-->
+		<footer>
+			<span class="fleft">
+				<a href="../contact.html">
+					<i class='far fa-envelope fa-2x'></i>
+					Contact Us
+				</a>
+			</span>
+			<span class="fright">
+				<span>Follow Us</span>
+				<a href="https://www.instagram.com/" target="_blank">
+					<i class='fab fa-instagram fa-2x'></i>
+				</a>
+				<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
+					<i class='fab fa-facebook-square fa-2x'></i>
+				</a>
+				<a href="https://www.twitter.com/" target="_blank">
+					<i class='fab fa-twitter-square fa-2x'></i>
+				</a>
+			</span>
+		</footer>
+	</main>
 </body>
 
 </html>
