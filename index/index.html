@@ -6,9 +6,9 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Ilona Krasnova" />
 	<title>Mamba's Pet Rescue | Home</title>
-	<link rel="icon" type="image/icon" href="favicon.ico">
+	<link rel="icon" type="image/icon" href="../favicon.ico">
 	<!--css stylesheet will control fonts and their sizes, background colour, icon sizes etc-->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="index.css" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 </head>
@@ -16,15 +16,16 @@
 <body>
 	<main>
 		<!--logo--> <!--set maxwidth for logo in css-->
-		<img id="logo" src="img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
+		<img id="logo" src="../img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
 
 		<!-- navigation; add CSS to space out, make hoverable and add contrast to "urhere" id -->
 		<nav>
-			<a class="urhere" href="">Home</a>
-			<a href="search.html">Cat-alogue Search</a>
-			<a href="faq.html">FAQ</a>
-			<a href="mission.html">Our Mission</a>
-			<a href="team.html">Our Team</a>
+			<a href="../index/index.html">Home</a>
+			<a href="../search/search.html">Cat-alogue Search</a>
+			<a href="../faq/faq.html">FAQ</a>
+			<a href="../mission/mission.html">Our Mission</a>
+			<a href="../team/team.html">Our Team</a>
+			<br />
 		</nav>
 			<!--breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
 			<ul class="breadcrumb">
@@ -43,13 +44,13 @@
 			</div>	
 			<br />
 			<!--Petpal function will go here. image is a placeholder.-->
-			<img src="img/bio-01.jpg" width="400px"/>
+			<img src="../img/bio-01.jpg" width="400px"/>
 			<br/>
 			<div>
 				<!---->
-				<button type="button" onclick="if (confirm('View matched pets or click cancel to continue looking!')) {location='matched.html';}">Like! <i class='fas fa-heart'></i></button>
+				<button type="button" onclick="if (confirm('View matched pets or click cancel to continue looking!')) {location='../matched/matched.html';}">Like! <i class='fas fa-heart'></i></button>
 				<button type="button" onclick="alert('todo: show next profile')">Not for me! <i class="fas fa-refresh"></i></button>
-				<a href="matched.html"><button>My matches</button></a>
+				<a href="../matched/matched.html"><button>My matches</button></a>
 			</div>
 			<h3>Javascript: </h3>
 			<h4>On load</h4>
@@ -77,7 +78,7 @@
 		<!--footer-->
 		<footer>
 			<span class="fleft">
-				<a href="../contact.html">
+				<a href="../contact/contact.html">
 					<i class='far fa-envelope fa-2x'></i>
 					Contact Us
 				</a>
