@@ -34,24 +34,63 @@
 
 
 		<article>
-			<p>Welcome to Mamba's Pet Rescue! Find your perfect match with PetPal below!</p>
+			<p id="didactic">Welcome to <b>Mamba's Pet Rescue</b>! Find your perfect match with <b>PetPal</b> below!</p>
 			<div>
-				<form>
-					<span>I am looking for a:</span>
-					<input name=pettype type="radio" value="cat" checked="checked">cat</input>	
-					<input name=pettype type="radio" value="dog">dog</input>
+				<form id="seeking">
+					<i class="fas fa-paw"></i>
+					<span>&nbsp; I am looking for a: &nbsp;</span>
+					<input name=pettype type="radio" value="cat" checked="checked"> cat &nbsp;</input>	
+					<input name=pettype type="radio" value="dog"> dog</input>
 				</form>
+				<br />
 			</div>	
-			<br />
-			<!--Petpal function will go here. image is a placeholder.-->
-			<img src="img/bio-01.jpg" width="400px"/>
-			<br/>
-			<div>
-				<!---->
-				<button type="button" onclick="if (confirm('View matched pets or click cancel to continue looking!')) {location='../matched/matched.html';}">Like! <i class='fas fa-heart'></i></button>
-				<button type="button" onclick="alert('todo: show next profile')">Not for me! <i class="fas fa-refresh"></i></button>
-				<a href="../matched/matched.html"><button>My matches</button></a>
-			</div>
+			<table>
+				<tr>
+				<td>
+					<!--Petpal function will go here. image is a placeholder.-->
+					<img src="img/bio-01.jpg" width="400px"/>	
+				</td>
+				<td id="info">
+					<h1>Paprika</h1>
+						<p>
+							<label>Age:</label>
+							<span class="value">&nbsp;11</span>
+						</p>
+						<p>
+							<label>Sex:</label>
+							<span class="value">&nbsp;F</span>
+						</p>
+						<p>
+							<label>Good with: <br/> <br/> &nbsp;</label>
+							<span class="value">
+								&nbsp; &#9745; Children <br />
+								&nbsp; &#9744; Cats <br />
+								&nbsp; &#9744; Dogs <br />
+							</span>
+						</p>
+						<p>
+							<label>Activity:</label>
+							<span class="value">&nbsp; High</span><br />
+						</p>
+						<p>	
+							<label>Size:</label>
+							<span class="value">&nbsp; Small</span><br />
+						</p>
+						<p>
+							<label>Arrived:</label>
+							<span class="value">&nbsp; 22 Apr 2020</span><br />
+						</p>
+						<p>Paprika may be an older cat, but her age doesn't stop her from enjoying life to the fullest! She is an outgoing, affectionate cat that would thrive with a family -- as long as she's the only pet!</p>
+					<br />
+					<div>
+						<!---->
+						<button type="button" onclick="if (confirm('View matched pets or click cancel to continue looking!')) {location='../matched/matched.html';}">Like! <i class='fas fa-heart'></i></button>
+						<button type="button" onclick="alert('todo: show next profile')">Not for me! <i class="fas fa-refresh"></i></button>
+						<a href="../matched/matched.html"><button>My matches</button></a>
+					</div>
+				</td>
+				</tr>
+			</table>
 			<h3>Javascript: </h3>
 			<h4>On load</h4>
 			<ol>

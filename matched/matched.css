@@ -1,32 +1,32 @@
 /* WEB FONTS */
 @font-face {
     font-family: Montserrat;
-    src: url(../fonts/Montserrat-Regular.woff2);
+    src: url(fonts/Montserrat-Regular.woff2);
     font-weight: normal;
 }
 @font-face {
     font-family: Montserrat;
-    src: url(../fonts/Montserrat-SemiBold.woff2);
+    src: url(fonts/Montserrat-SemiBold.woff2);
     font-weight: bold;
 }
 @font-face {
     font-family: CooperHewitt;
-    src: url(../fonts/cooperhewitt-book-webfont.woff2);
+    src: url(fonts/cooperhewitt-book-webfont.woff2);
     font-weight: normal;
 }
 @font-face {
     font-family: CooperHewitt;
-    src: url(../fonts/cooperhewitt-semibold-webfont.woff2);
+    src: url(fonts/cooperhewitt-semibold-webfont.woff2);
     font-weight: bold;
 }
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/roboto-regular.woff2);
+    src: url(fonts/roboto-regular.woff2);
     font-weight: normal;
 }
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/roboto-bold.woff2);
+    src: url(fonts/roboto-bold.woff2);
     font-weight: bold;
 }
 
@@ -167,6 +167,42 @@ footer .fright a {
 
 footer a:hover {
     color: #e9cdab;
+}
+
+p#didactic {
+    margin: 40px 0px;
+}
+
+table p {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+table td {
+    vertical-align: top;
+}
+
+td.description {
+    padding-top: 20px;
+}
+
+td.description > p {
+    max-height: 135px;
+    overflow-y: hidden;
+}
+
+table a {
+    text-decoration: none;
+    color: #bf4e4e;
+    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+table a:hover {
+    color: #333333;
+}
 }
 
 /* for mobile */
