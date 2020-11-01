@@ -49,7 +49,7 @@ main {
     max-width: 1000px;
     width: 100%;
     background-color: white;
-    opacity 1;
+    opacity: 1;
     margin: 0 auto; /* center horizontally */
 }
 
@@ -122,6 +122,11 @@ h1 {
     margin-top: 0;
 }
 
+h3 {
+    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
 p {
     text-align: justify;
 }
@@ -188,10 +193,68 @@ span.value {
 
 }
 
-label {
+.survey label {
+    display: inline-block;
+    width: 250px;
+}
+
+#info label {
     display: inline-block;
     width: 90px;
     /* text-align: right; */
+}
+
+.spacer {
+    display: inline-block;
+    width: 80px;
+}
+
+input:not([type=checkbox]):not([type=range]), select {
+    height: 30px;
+    border-radius: 8px;
+    width: 235px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+select {
+    background-color: white;
+}
+
+input:focus:not([type=checkbox]):not([type=range]) {
+    border-color: #ce6f1f;
+    height: 30px;
+    border-radius: 8px;
+    width: 235px;
+}
+
+input[type=range] {
+    width: 235px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #bf4e4e;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 155px !important;
+}
+
+textarea {
+    width: 100%;
+}
+
+fieldset {
+    border-radius: 8px;
+    padding: 0 20px;
+}
+
+.helptext {
+    font-size: 80%;
+    margin-right: 25px;
 }
 
 /* for mobile */

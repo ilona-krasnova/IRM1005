@@ -92,58 +92,77 @@
 				Hi, welcome to Mamba's Pet Rescue! Please fill out the survey below.
 			</audio>
 			<br /> <br />
-			<form action="action_page.php">
+			<form class="survey" action="action_page.php">
 				<fieldset>
 					<legend>Personal Information</legend>
-					<label for="firstname">First name:</label><br/>
-					<input id="firstname" type="text" name="firstname" value="" />
-					<br/>
-					<label for="lastname">Last name:</label><br/>
-					<input id="lastname" type="text" name="lastname" value="">
+					<p>
+						<label for="firstname">First name:</label>
+						<input id="firstname" type="text" name="firstname" value="" />
+					</p>
+					<p>
+						<label for="lastname">Last name:</label>
+						<input id="lastname" type="text" name="lastname" value="">
+					</p>
 				</fieldset>
 				<fieldset>
 					<legend>Household Information</legend>
-					<p><label for="residence-input">Residence type</label></p>
-					<input id="residence-input" list="residence" />
-						<datalist id="residence">
-							<option value="House"/>
-							<option value="Apartment"/>
-						</datalist>
-					</input>
-					<br />
-					<p>Location</p>
-					<select name="cars">
-						<option value="urban">Urban</option>
-						<option value="suburb">Subruban</option>
-						<option value="rural">Rural</option>
-					</select>
-					<p>Does your household have</p>
-					<input type="checkbox" name="children" value="children" />Children<br/> 
-					<input type="checkbox" name="cats" value="cats" />Cats<br/> 
-					<input type="checkbox" name="dogs" value="dogs" />Dogs<br/> 
-					<input type="checkbox" name="other-animals" value="other-animals" />Other animals<br/> 
-					<p><label for="fam">How many family members?</label></p>
-					<input type="number" id="fam" name="fam" value="1" />
-					<p><label for="pet">How many pets?</label></p>
-					<input type="number" id="pet" name="pets" value="0" />
-
+					<p>
+						<label for="residence-input">Residence type</label>
+						<input id="residence-input" list="residence" />
+							<datalist id="residence">
+								<option value="House"/>
+								<option value="Apartment"/>
+							</datalist>
+						</input>
+					</p>
+					<p>
+						<label>Location</label>
+						<select name="location">
+							<option value="urban">Urban</option>
+							<option value="suburb">Subruban</option>
+							<option value="rural">Rural</option>
+						</select>
+					<p>
+						<label>Does your household have<br /><br /><br />&nbsp;</label>
+						<span style="display: inline-block;">
+							<input type="checkbox" name="children" value="children" />Children<br/> 
+							<input type="checkbox" name="cats" value="cats" />Cats<br/> 
+							<input type="checkbox" name="dogs" value="dogs" />Dogs<br/> 
+							<input type="checkbox" name="other-animals" value="other-animals" />Other animals
+						</span>
+					</p>
+					<p>
+						<label for="fam">How many family members?</label>
+						<input type="number" id="fam" name="fam" value="1" />
+					</p>
+					<p>
+						<label for="pet">How many pets?</label>
+						<input type="number" id="pet" name="pets" value="0" />
+					</p>
 				</fieldset>
 				<fieldset>
 					<legend>Commitment</legend>
-					<p>How much time do you spend at home?</p>
-					I'm never home
-					<input type="range" id="a" name="a" value="50" />
-					I'm always home
-					<br />
-					<p><label for="message">Tell us about yourself!</label></p>
-					<textarea id="message" name="message" rows="10" cols="32" placeholder="In detail!"></textarea>
+					<p>
+						How much time do you spend at home?<br />
+						<label>&nbsp;</label>
+						<input type="range" id="a" name="a" value="50" /> <br>
+						<label>&nbsp;</label>
+						<span class="helptext">I'm never home</span>
+						<span class="helptext">I'm always home</span>
+					</p>
+					<p>
+						<label for="message">Tell us about yourself!</label><br />
+						<textarea id="message" name="message" rows="10" cols="32" placeholder="In detail!"></textarea>
+					</p>
 				</fieldset>
-				<input type="submit" value="Submit" />
-				<input type="reset" value="Erase All">
+				<p>
+					<input type="submit" id="submit" value="Submit" />
+					<input type="reset" id="reset" value="Erase All">
+				</p>
 			</form>
 		<h3>Paprika's Favourite YouTube Channel:</h3>
 		<!--copied from YouTube.-->
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/_5RTDozH5xg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="100%" height="500px" src="https://www.youtube.com/embed/_5RTDozH5xg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</aside>
 		<!--footer-->
 		<br />

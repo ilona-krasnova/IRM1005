@@ -49,7 +49,7 @@ main {
     max-width: 1000px;
     width: 100%;
     background-color: white;
-    opacity 1;
+    opacity: 1;
     margin: 0 auto; /* center horizontally */
 }
 
@@ -119,6 +119,11 @@ h1 {
     font-family: CooperHewitt, Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #bf4e4e;
+}
+
+h3 {
+    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 button {
@@ -202,7 +207,6 @@ table a {
 
 table a:hover {
     color: #333333;
-}
 }
 
 /* for mobile */
