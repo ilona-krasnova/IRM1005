@@ -1,0 +1,83 @@
+body {
+    background-image: linear-gradient(to right, #ce6f1f, #e9cdab, #e9cdab, #e9cdab, #ce6f1f);
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+main {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto; 
+}
+
+img#logo {
+    width: 90px;
+    margin: 20px 40px 0 40px;
+}
+
+nav {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 15px;
+    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333333;
+}
+
+nav a.urhere {
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+h2 {
+    position: absolute;
+    display: block;
+    top: 100px;
+    left:500px;
+    font-size: 30px;
+    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+p  {
+    position: absolute;
+    display: block;
+    top: 150px;
+    left: 30px;
+    font-size: 15px;
+    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+footer.f 
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #bf4e4e;
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+}
+
