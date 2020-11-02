@@ -1,12 +1,273 @@
+@font-face {
+
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-book-webfont.woff2);
+    font-weight: normal;
+
+}
+
+
+@font-face {
+
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-semibold-webfont.woff2);
+    font-weight: bold;
+
+}
+
+
+@font-face {
+
+    font-family: Roboto;
+    src: url(fonts/roboto-bold.woff2);
+    font-weight: bold;
+
+}
+
+
 #logo {
 
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+	width: 600px;
+	margin: 2px 20px 0 40px;
 }
+
+
+* {
+
+	box-sizing: border-box;
+
+}
+
+
+nav {
+
+	position: absolute;
+	display: block;
+	top: 250px;
+	left: 200px;
+	
+	font-family: CooperHewitt, Arial;
+	text-transform: uppercase;
+	font-size: 24px;
+
+}
+
+
+nav a {
+
+	margin-right: 20px;
+
+	text-decoration: none;
+	color: #333333;
+
+}
+
+
+nav a:hover {
+
+	color: black;
+	text-decoration: underline;
+
+}
+
+
+ul.breadcrumb {
+
+	list-style: none;
+
+}
+
+
+ul.breadcrumb > li {
+
+	display: inline;
+	font-size: 16px;
+
+}
+
+
+ul.breadcrumb > li a {
+
+	color: #ce6f1f;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+
+ul.breadcrumb li+li:before {
+
+	color: #ce6f1f;
+
+	content: ">\00a0";
+}
+
+
+ul.breadcrumb li a:hover {
+
+	text-decoration: underline;
+
+}
+
 
 body {
 
-	background-color: rgb(242, 234, 223);
+	background-image: linear-gradient(to right, #ce6f1f, #e9cdab, #e9cdab, #e9cdab, #ce6f1f);
+	color: #333333;
+
+	margin: 0;
+	padding: 0;
+
+	font-size: 16px;
+	font-family: CooperHewitt, Arial;
+
 }
+
+main {
+
+	position: relative;
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
+
+
+	background-color: white;
+	opacity: 1;
+
+}
+
+article, aside {
+
+	margin: 0 40px;
+	
+}
+
+
+h1 {
+
+	font-weight: bold;
+	font-family: CooperHewitt, Arial;
+	font-size: 42px;
+
+    color: #bf4e4e;
+	margin-top: 0;
+
+}
+
+
+td#bio {
+
+	padding-left: 35px;
+	vertical-align: top;
+
+}
+
+
+span.information {
+
+	font-weight: bold;
+	display: inline-block;
+
+}
+
+
+button {
+
+	background-color: #bf4e4e;
+	color: white;
+	
+	font-weight: bold;
+	font-family: Roboto, Arial;
+	text-align: center;
+
+	height: 40px;
+	padding: 0 20px;
+	min-width: 155px;
+	border-radius: 8px;
+
+}
+
+
+button:hover {
+
+	opacity: .85;
+
+}
+
+
+footer {
+
+	background-color: #bf4e4e;
+	padding: 15px 40px;
+	color: white;
+	
+	font-weight: bold;
+
+}
+
+
+footer i {
+
+	vertical-align: middle;
+
+}
+
+
+footer a {
+
+	color: white;
+	text-decoration: none;
+
+}
+
+
+footer a:hover {
+
+	color: #e9cdab;
+
+}
+
+
+footer.contact {
+
+	margin-left: 10px;
+
+}
+
+
+footer.socials i {
+
+	float: right;
+
+}
+
+
+footer.socials a {
+
+	margin-right: 3000px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
