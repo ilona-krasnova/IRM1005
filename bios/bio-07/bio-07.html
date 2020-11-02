@@ -12,32 +12,33 @@
 </head>
 
 <body>
+	<main>
 	<img id="logo" src="../../img/logo.png" alt="Mamba's Pet Rescue Logo" width="300px"/>
 
 	<nav>
-		<a href="../../index/index.html">Home (PetPal)</a>
+		<a href="../../index/index.html">Home</a>
 		<a href="../../search/search.html">Cat-alogue Search</a>
 		<a href="../../faq/faq.html">FAQ</a>
 		<a href="../../mission/mission.html">Our Mission</a>
 		<a href="../../team/team.html">Our Team</a>
+	</nav>
 
 		<ul class="breadcrumb">
             <li><a href="../../index.html">Home</a></li>
             <li><a href="../../matched.html">PetPal Matched</a></li>
             <li><a href="#">Winston</a></li>
 		</ul>
-	</nav>
 
 <article>
-	<!--Override with CSS later-->
-	<table width="50%">
+	<table>
 		<tr>
 			<td>
 				<img src="../../img/bio-07.jpg" alt="Winston" height="500px"/>
 			</td>
-			<td>
+			<td id="bio">
 				<h1>Winston</h1>
-				<p>Age: 5 months</p>
+				
+				<!--<p>Age: 5 months</p>
 				<p>Sex: Male</p>
 				<p>Good with: <br/>
 					&#9744; Children <br/>
@@ -46,19 +47,73 @@
                     <br/>
                     Activity: Low<br/>
 					Size: Small<br/>
-					Arrived at shelter: July 29th 2020<br/>
+					Arrived: July 29th 2020<br/>-->
+
+
+					<table>
+					<tr>
+						<td><label>Age:</label></td>
+						<td><span class="information">5 months</span></td>
+					</tr>
+					<tr>
+						<td><label>Sex:</label></td>
+						<td><span class="information">Male</span></td>
+					</tr>
+					<tr>
+						<td><label>Good with:</label></td>
+						<td><span class="information">
+							&#9744; Children<br/>
+                            &#9745; Cats<br/>
+                            &#9744; Dogs<br/>
+                    </span></td>
+					</tr>
+					<tr>
+						<td><label>Activity:</label></td>
+						<td><span class="information">Low</span></td>
+					</tr>
+					<tr>
+						<td><label>Size</label></td>
+						<td><span class="information">Small</span></td>
+					</tr>
+					<tr>
+						<td><label>Arrived:</label></td>
+						<td><span class="information">July 29th 2020</span></td>
+					</tr>
+				</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </p>
                 <p>Winston prefers to sleep most of the time, so be sure to purchase the comfiest bed that is able go in a nice sunny spot. When Winston is awake, he loves to be cuddled gently. A quiet atmosphere is what Winston prefers, so make sure he is not around too many people.</p>
+                
+                <a href="../../adopt/adopt.html"><button>Adopt me!</button></a>
             </td>
         </tr>
     </table>
 </article>
 
 	<footer>
+		<span class="contact">
 		<a href="faq.html">
 			<i class='far fa-envelope fa-lg'></i>
 			Contact us
 		</a>
+	</span>
+	<span class="socials">
 		<span>Follow us</span>
 		<a href="https://www.instagram.com/" target="_blank">
 			<i class='fab fa-instagram fa-lg'></i>
@@ -69,7 +124,10 @@
 		<a href="https://www.twitter.com/" target="_blank">
 			<i class='fab fa-twitter-square fa-lg'></i>
 		</a>
+	</span>
 	</footer>
+
+	<main>
 
 </body>
 
