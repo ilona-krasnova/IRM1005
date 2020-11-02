@@ -12,53 +12,81 @@
 </head>
 
 <body>
+	<main>
 	<img id="logo" src="../../img/logo.png" alt="Mamba's Pet Rescue Logo" width="300px"/>
 
 	<nav>
-		<a href="../../index/index.html">Home (PetPal)</a>
+		<a href="../../index/index.html">Home</a>
 		<a href="../../search/search.html">Cat-alogue Search</a>
 		<a href="../../faq/faq.html">FAQ</a>
 		<a href="../../mission/mission.html">Our Mission</a>
 		<a href="../../team/team.html">Our Team</a>
-
-		<ul class="breadcrumb">
-            <li><a href="../../index/index.html">Home</a></li>
-            <li><a href="../../matched/matched.html">PetPal Matched</a></li>
-            <li><a href="#">Coco</a></li>
-		</ul>
 	</nav>
+	
+	<ul class="breadcrumb">
+        <li><a href="../../index/index.html">Home</a></li>
+        <li><a href="../../matched/matched.html">PetPal Matched</a></li>
+        <li><a href="#">Coco</a></li>
+	</ul>
+<article>
 
-<article> 
-	<!--Override with CSS later-->
-	<table width="50%">
+	<table>
 		<tr>
 			<td>
 				<img src="../../img/bio-06.jpg" alt="Coco" height="500px"/>
 			</td>
-			<td>
+			<td id="bio">
 				<h1>Coco</h1>
-				<p>Age: 9 years</p>
-				<p>Sex: Male</p>
-				<p>Good with:<br/>
-					&#9745; Children<br/>
-                    &#9744; Cats<br/>
-                    &#9744; Dogs<br/>
-                    <br/>
-                    Activity: High<br/>
-					Size: Small<br/>
-					Arrived at shelter: September 1st 2014<br/>
-				</p>
+				
+				<table>
+					<tr>
+						<td><label>Age:</label></td>
+						<td><span class="information">9 years</span></td>
+					</tr>
+					<tr>
+						<td><label>Sex:</label></td>
+						<td><span class="information">Male</span></td>
+					</tr>
+					<tr>
+						<td><label>Good with:<br/> <br/> &nbsp;</label></td>
+						<td><span class="information">
+					    &#9745; Children<br/>
+                        &#9744; Cats<br/>
+                        &#9744; Dogs<br/>
+                    </span></td>
+					</tr>
+					<tr>
+						<td><label>Activity:</label></td>
+						<td><span class="information">High</span></td>
+					</tr>
+					<tr>
+						<td><label>Size:</label></td>
+						<td><span class="information">Small</span></td>
+					</tr>
+					<tr>
+						<td><label>Arrived:</label></td>
+						<td><span class="information">September 1st 2014</span></td>
+					</tr>
+				</table>
+
                 <p>Coco loves to reveive lots of attention and love! Coco's favourite things are going to the park and going for walks. Make sure that he has enough toys to play with, because he likes to spend most of his time playing.</p>
+                
+                <a href="../../adopt/adopt.html"><button>Adopt me!</button></a>
+
             </td>
         </tr>
     </table>
 </article>
+<br/>
 
 <footer>
+	<span class="contact">
 		<a href="faq.html">
 			<i class='far fa-envelope fa-lg'></i>
 			Contact us
 		</a>
+	</span>
+	<span class="socials">
 		<span>Follow us</span>
 		<a href="https://www.instagram.com/" target="_blank">
 			<i class='fab fa-instagram fa-lg'></i>
@@ -69,7 +97,10 @@
 		<a href="https://www.twitter.com/" target="_blank">
 			<i class='fab fa-twitter-square fa-lg'></i>
 		</a>
+	</span>
 	</footer>
+
+</main>
 
 </body>
 
