@@ -117,8 +117,9 @@ p {
 	margin-left: 40px;
 	margin-right: 40px;
 	padding: 10px 10px 10px 10px;
-	background-color: rgb(206, 111, 31);
-	outline-color: rgb(191, 78, 78);
+	/*background-color: rgb(206, 111, 31);*/
+	background-color: rgb(191, 78, 78);
+	outline-color: rgb(206, 111, 31);
 	outline-style: dotted;
 	outline-width: 5px;
 
@@ -134,8 +135,8 @@ p {
 
 p:hover {
 
-	color: rgb(0, 0, 0);
-	background-color: rgb(191, 78, 78);
+	color: #333333;
+	background-color: rgb(206, 111, 31);
 	
 }
 
@@ -151,8 +152,8 @@ h1 {
 	margin-right: 150px;
 	margin-bottom: 70px;
 
-
-	background-color: rgb(191, 78, 78);
+	background-color: rgb(206, 111, 31);
+	color: #333333;
 
 }
 
@@ -160,7 +161,7 @@ h1 {
 h1:hover {
 
 	color: rgb(217, 167, 150);
-	background-color: rgb(206, 111, 31);
+	background-color: rgb(191, 78, 78);
 }
 
 
