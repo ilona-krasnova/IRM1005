@@ -1,3 +1,21 @@
+@font-face {
+
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-book-webfont.woff2);
+    font-weight: normal;
+
+}
+
+
+@font-face {
+
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-semibold-webfont.woff2);
+    font-weight: bold;
+
+}
+
+
 #logo {
 
 	width: 600px;
@@ -110,34 +128,24 @@ main {
       
 }
 
-div.dropdown {
 
-	position: relative;
-	display: inline-block;
-}
+button.collapsible {
 
+	cursor: pointer;
+	border-radius: 10px;
 
-div.dropdown-content {
-
-	position: absolute;
-	display:none;
-	background-repeat: pink;
-
+	background-color: #ce6f1f;
 
 }
 
+div.content {
 
-.dropdown:hover dropdown-content {
-
-	display: block;
+	overflow: hidden;
 
 }
 
 
-ol {
 
-
-}
 
 
 
@@ -147,8 +155,9 @@ ol {
 footer {
 
 	background-color: #bf4e4e;
-	padding: 15px 40px;
 	color: white;
+	
+	padding: 15px 40px;
 	
 	font-weight: bold;
 
@@ -177,19 +186,20 @@ footer a:hover {
 }
 
 
-footer.contact {
+.contact {
 
 	margin-left: 10px;
 
 }
 
 
-footer.socials {
+.socials {
 
 	float: right;
 	text-align: right;
 
 }
+
 
 
 
