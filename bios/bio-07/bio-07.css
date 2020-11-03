@@ -198,9 +198,10 @@ button:hover {
 footer {
 
 	background-color: #bf4e4e;
-	padding: 15px 40px;
 	color: white;
 	
+	padding: 15px 40px;
+
 	font-weight: bold;
 
 }
@@ -228,25 +229,20 @@ footer a:hover {
 }
 
 
-footer.contact {
+.contact {
 
 	margin-left: 10px;
 
 }
 
 
-footer.socials i {
+.socials {
 
 	float: right;
+	text-align: right;
 
 }
 
-
-footer.socials a {
-
-	margin-right: 3000px;
-
-}
 
 
 
