@@ -1,8 +1,30 @@
+@font-face {
+
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-book-webfont.woff2);
+    font-weight: normal;
+
+}
+
+
+
+@font-face {
+
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-semibold-webfont.woff2);
+    font-weight: bold;
+
+}
+
+
+
 #logo {
 
 	width: 600px;
 	margin: 2px 20px 40px;
+
 }
+
 
 
 * {
@@ -10,6 +32,7 @@
 	box-sizing: border-box;
 
 }
+
 
 
 nav {
@@ -26,6 +49,7 @@ nav {
 }
 
 
+
 nav a {
 
 	margin-right: 20px;
@@ -36,12 +60,14 @@ nav a {
 }
 
 
+
 nav a:hover {
 
 	color: black;
 	text-decoration: underline;
 
 }
+
 
 
 ul.breadcrumb {
@@ -51,12 +77,14 @@ ul.breadcrumb {
 }
 
 
+
 ul.breadcrumb > li {
 
 	display: inline;
 	font-size: 16px;
 
 }
+
 
 
 ul.breadcrumb > li a {
@@ -68,12 +96,15 @@ ul.breadcrumb > li a {
 }
 
 
+
 ul.breadcrumb li+li:before {
 
 	color: #ce6f1f;
 
 	content: ">\00a0";
+
 }
+
 
 
 ul.breadcrumb li a:hover {
@@ -81,6 +112,7 @@ ul.breadcrumb li a:hover {
 	text-decoration: underline;
 
 }
+
 
 
 body {
@@ -98,6 +130,7 @@ body {
 }
 
 
+
 main {
 
 	margin: 0 auto; 
@@ -111,32 +144,34 @@ main {
 }
 
 
+
 p {
 
 	border: none;
 	margin-left: 40px;
 	margin-right: 40px;
 	padding: 10px 10px 10px 10px;
-	/*background-color: rgb(206, 111, 31);*/
-	background-color: rgb(191, 78, 78);
-	outline-color: rgb(206, 111, 31);
+
+	background-color: #bf4e4e;
+	outline-color: #ce6f1f;
 	outline-style: dotted;
 	outline-width: 5px;
 
 	text-align: center;
 	font-size: 35px;
-	font-family: HKGrotesk-Regular;
-	src: url(HKGrotesk-Regular.otf);
+	font-family: CooperHewitt, Arial;
 	line-height: 55px;
-	color: rgb(242, 234, 223);
+	color: #ffffff;
 
 }
+
 
 
 p:hover {
 
 	color: #333333;
 	background-color: rgb(206, 111, 31);
+	outline-color: #bf4e4e;
 	
 }
 
@@ -145,35 +180,42 @@ p:hover {
 h1 {
 
 	text-align: center;
+	font-family: CooperHewitt, Arial;
+	letter-spacing: 2px;
+
 	border-radius: 10px;
 	padding: 10px 10px 10px 10px;
-	letter-spacing: 2px;
 	margin-left: 150px;
 	margin-right: 150px;
 	margin-bottom: 70px;
 
-	background-color: rgb(206, 111, 31);
+	background-color: #ce6f1f;
 	color: #333333;
 
 }
 
 
+
 h1:hover {
 
-	color: rgb(217, 167, 150);
-	background-color: rgb(191, 78, 78);
+	color: #ffffff;
+	background-color: #bf4e4e;
+
 }
+
 
 
 footer {
 
 	background-color: #bf4e4e;
-	padding: 15px 40px;
 	color: white;
 	
+	padding: 15px 40px;
+
 	font-weight: bold;
 
 }
+
 
 
 footer i {
@@ -181,6 +223,7 @@ footer i {
 	vertical-align: middle;
 
 }
+
 
 
 footer a {
@@ -198,28 +241,21 @@ footer a:hover {
 }
 
 
-footer.contact {
+
+.contact {
 
 	margin-left: 10px;
 
 }
 
 
-footer.socials {
+
+.socials {
 
 	float: right;
 	text-align: right;
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
