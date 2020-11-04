@@ -9,6 +9,23 @@
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="faq.css"/>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	<script type="text/javascript">
+		
+		function hideShow(ele)
+		{
+			if (ele.style.display === "block") 
+   			{
+ 				ele.style.display = "none";
+ 			} 
+   		 	else 	
+   		 	{
+    	 		ele.style.display = "block";
+   			}
+		}
+
+	</script>
+
 </head>
 
 <body>
@@ -27,7 +44,7 @@
 		</ul>
 
 	<arcticle>
-		<button type="button" class="collapsible"><b>What you need to have before you adopt a dog:   +</b></button>
+		<div class="collapsible" onclick="hideShow(this.nextElementSibling)"><b>What you need to have before you adopt a dog:</b></div>
 		<div class="content">
 		<ol>
 			<li>Dog bed</li>
@@ -40,8 +57,8 @@
 			<li>Hygiene supplies (toothbrush, toothpaste, nail clippers, etc)</li>
 		</ol>
         </div>
-
-		<button type="button" class="collapsible"><b>What you need to have before you adopt a cat:   +</b></button>
+	<div/>
+		<div class="collapsible" onclick="hideShow(this.nextElementSibling)"><b>What you need to have before you adopt a cat:</b></div>
 		<div class="content">
 		<ol>
 			<li>Collar</li>
@@ -53,8 +70,8 @@
 			<li>Hygiene supplies (toothbrush, toothpaste, nail clippers, etc)</li>
 		</ol>
 	    </div>
-
-		<button type="button" class="collapsible"><b>What should I know before I adopt?   +</b></button>
+	<div/>
+		<div class="collapsible" onclick="hideShow(this.nextElementSibling)"><b>What should I know before I adopt?</b></div>
 		<div class="content">
 		<ul>
 			<li>Make sure that you have enough time to take care of a pet, they need a lot of work. They need attention, to be taken to the vet, fed, groomed, and more.</li>
@@ -66,6 +83,8 @@
 		</ul>
 	   </div>
 	</arcticle>
+
+
 
 	<footer>
 		<span class="contact">
@@ -161,6 +180,7 @@
 </section>
 
 </main>
+
 
 </body>
 
