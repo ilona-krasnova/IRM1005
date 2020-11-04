@@ -79,7 +79,8 @@ nav a.urhere {
     font-weight: bold;
 }
 
-a:hover {
+nav a:hover {
+    color: black;
     text-decoration: underline;
 }
 
@@ -145,7 +146,7 @@ legend {
 
 span.f1 {
   display: inline-block;
-  padding: 0px 75px;
+  padding: 0px 115px;
 }
 
 span.f2 {
@@ -163,7 +164,7 @@ span.f3 {
   padding: 30px;
 }
 
-input:not([type=checkbox]):not([type=range]), select {
+input:not([type=checkbox]):not([type=range]) :not([type=radio]), select {
     height: 30px;
     border-radius: 8px;
     width: 120px;
@@ -174,7 +175,7 @@ select {
     background-color: white;
 }
 
-input:focus:not([type=checkbox]):not([type=range]) {
+input:focus:not([type=checkbox]):not([type=range]):not([type=radio]){
     border-color: #ce6f1f;
     height: 30px;
     border-radius: 8px;
