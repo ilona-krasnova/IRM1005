@@ -114,23 +114,6 @@ article, aside {
     margin: 0 40px;
 }
 
-h1 {
-    font-size: 42px;
-    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #bf4e4e;
-    margin-top: 0;
-}
-
-h3 {
-    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-p {
-    text-align: justify;
-}
-
 table {
         margin-bottom: 75px
 }
@@ -148,6 +131,11 @@ button {
 
 button:hover{
     opacity: .85;
+}
+
+/*making it less easy to see the overflow to encourage concise feedback haha*/
+textarea {
+  overflow: hidden;
 }
 
 footer {
