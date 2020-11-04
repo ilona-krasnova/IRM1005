@@ -171,7 +171,7 @@ select {
     background-color: white;
 }
 
-input:focus:not([type=checkbox]):not([type=range]) {
+input:focus:not([type=checkbox]):not([type=range]):not([type=radio]){
     border-color: #ce6f1f;
     height: 30px;
     border-radius: 8px;
