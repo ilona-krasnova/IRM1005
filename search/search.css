@@ -142,7 +142,7 @@ legend {
 
 span.f1 {
   display: inline-block;
-  padding: 0px 75px;
+  padding: 0px 115px;
 }
 
 span.f2 {
@@ -160,7 +160,7 @@ span.f3 {
   padding: 30px;
 }
 
-input:not([type=checkbox]):not([type=range]), select {
+input:not([type=checkbox]):not([type=range]) :not([type=radio]), select {
     height: 30px;
     border-radius: 8px;
     width: 120px;
