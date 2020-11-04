@@ -196,10 +196,17 @@ h1 {
 
 
 
+table td {
+
+	vertical-align: top;
+
+}
+
+
+
 td#bio {
 
 	padding-left: 35px;
-	/*vertical-align: top;*/
 
 }
 
