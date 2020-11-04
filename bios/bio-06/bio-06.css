@@ -7,6 +7,7 @@
 }
 
 
+
 @font-face {
 
     font-family: CooperHewitt;
@@ -14,6 +15,7 @@
     font-weight: bold;
 
 }
+
 
 
 @font-face {
@@ -25,6 +27,7 @@
 }
 
 
+
 #logo {
 
 	width: 600px;
@@ -33,11 +36,13 @@
 }
 
 
+
 * {
 
 	box-sizing: border-box;
 
 }
+
 
 
 nav {
@@ -54,6 +59,7 @@ nav {
 }
 
 
+
 nav a {
 
 	margin-right: 20px;
@@ -64,12 +70,14 @@ nav a {
 }
 
 
+
 nav a:hover {
 
 	color: black;
 	text-decoration: underline;
 
 }
+
 
 
 ul.breadcrumb {
@@ -79,12 +87,14 @@ ul.breadcrumb {
 }
 
 
+
 ul.breadcrumb > li {
 
 	display: inline;
 	font-size: 16px;
 
 }
+
 
 
 ul.breadcrumb > li a {
@@ -96,12 +106,15 @@ ul.breadcrumb > li a {
 }
 
 
+
 ul.breadcrumb li+li:before {
 
 	color: #ce6f1f;
 
 	content: ">\00a0";
+
 }
+
 
 
 ul.breadcrumb li a:hover {
@@ -109,6 +122,7 @@ ul.breadcrumb li a:hover {
 	text-decoration: underline;
 
 }
+
 
 
 body {
@@ -126,6 +140,7 @@ body {
 }
 
 
+
 main {
 
 	margin: 0 auto; 
@@ -139,11 +154,13 @@ main {
 }
 
 
+
 article, aside {
 
 	margin: 0 40px;
 
 }
+
 
 
 
@@ -159,6 +176,7 @@ h1 {
 }
 
 
+
 p {
 
 	text-align: justify;
@@ -168,11 +186,13 @@ p {
 }
 
 
+
 table td {
 
 	vertical-align: top;
 
 }
+
 
 
 td#bio {
@@ -182,14 +202,17 @@ td#bio {
 }
 
 
+
 span.information {
 
 	font-weight: bold;
+	
 	display: inline-block;
 	margin-left: 30px;
 	margin-bottom: 15px;
 
 }
+
 
 
 button {
@@ -209,11 +232,13 @@ button {
 }
 
 
+
 button:hover {
 
 	opacity: .85;
 
 }
+
 
 
 footer {
@@ -228,11 +253,13 @@ footer {
 }
 
 
+
 footer i {
 
 	vertical-align: middle;
 
 }
+
 
 
 footer a {
@@ -243,6 +270,7 @@ footer a {
 }
 
 
+
 footer a:hover {
 
 	color: #e9cdab;
@@ -250,44 +278,23 @@ footer a:hover {
 }
 
 
+
 .contact {
 
 	margin-left: 10px;
+	font-size: 19px;
 
 }
+
 
 
 .socials {
 
 	float: right;
 	text-align: right;
+	font-size: 19px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
