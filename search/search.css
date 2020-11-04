@@ -80,7 +80,7 @@ nav a.urhere {
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Style the list */
@@ -211,6 +211,15 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
 }
 
+a.pet:hover::before {
+  content: url("img/dog-paw.png")
+}
+
+div.content:hover img {
+  opacity: 0.5;
+  transform: scale(0.75, 0.75);
+}
+
 .mainbody
 {
 
@@ -261,4 +270,3 @@ footer a:hover {
         top: 0;
         left: 40px;
     }
-}
