@@ -79,6 +79,10 @@ nav a.urhere {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
 
 /* Style the list */
 ul.breadcrumb {
