@@ -1,10 +1,14 @@
 body {
-    background-image: linear-gradient(to right, #ce6f1f, #e9cdab, #e9cdab, #e9cdab, #ce6f1f);
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #333333;
+
+background-image: linear-gradient(to right, #ce6f1f, #e9cdab, #e9cdab, #e9cdab, #ce6f1f);
+  
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  font-family: Montserrat, Arial;
+
 }
 
 h2 {text-align: center;}
@@ -27,13 +31,160 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background: #6cf;
+
+
+@font-face {
+
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-book-webfont.woff2);
+    font-weight: normal;
+
 }
+
+@font-face {
+
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-semibold-webfont.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.woff2);
+    font-weight: normal;
+}
+
+
+@font-face {
+
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-SemiBold.woff2);
+    font-weight: bold;  
+}
+
+#logo {
+
+  width: 600px;
+  margin: 20px 40px 0 40px;
+}
+
+
+
+nav {
+
+  position: absolute;
+  display: block;
+  top: 250px;
+  left: 200px;
+  
+  font-family: CooperHewitt, Arial;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+nav a {
+  margin-right: 20px;
+
+  text-decoration: none;
+  color: #333333;
+}
+
+nav a:hover {
+color: black;
+text-decoration: underline;
+}
+
+ul.breadcrumb {
+list-style: none;
+}
+
+
+ul.breadcrumb > li {
+  display: inline;
+  font-size: 16px;
+}
+
+
+ul.breadcrumb > li a {
+
+color: #ce6f1f;
+text-decoration: none;
+font-weight: bold;
+
+}
+
+
+
+ul.breadcrumb li+li:before {
+
+  color: #ce6f1f;
+
+  content: ">\00a0";
+}
+
+
+
+ul.breadcrumb li a:hover {
+
+  text-decoration: underline;
+}
+
+
+
+main {
+
+  margin: 0 auto; 
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    
+    background-color: white;
+    opacity: 1;    
+}
+
+
+
+p {
+
+  border: none;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 10px 10px 10px 10px;
+
+  background-color: #bf4e4e;
+  outline-color: #ce6f1f;
+  outline-style: none;
+  outline-width: 5px;
+
+  text-align: center;
+  font-size: 20px;
+  font-family: CooperHewitt, Arial;
+  line-height: 55px;
+  color: #ffffff;
+
+}
+
+
+
+footer {
+
+  background-color: #bf4e4e;
+  color: white;
+  
+  padding: 15px 40px;
+
+  font-weight: bold;
+}
+
+
+
+footer a:hover {
+
+  color: #e9cdab;
+}
+
+
 
 footer i {
     vertical-align: middle;
@@ -60,14 +211,3 @@ footer a:hover {
     color: #e9cdab;
 }
 
-
-@media only screen and (max-width: 599px) {
-    img#logo {
-        width: 100%
-    }
-    main nav {
-        position: relative;
-        top: 0;
-        left: 40px;
-    }
-}
