@@ -6,6 +6,8 @@
 	<meta charset="utf-8">
 	<title>Mamba's Pet Rescue | Adoption Form</title>
 	<link rel="stylesheet" type="text/css" href="adopt.css"/>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 
 </head>
 
@@ -14,69 +16,72 @@
 	<img id="logo" src="../img/logo.png" alt="Mamba's Pet Rescue logo" width="300px">
 
 	<nav>
-		<a href="../../index/index.html">Home</a>
-				<a href="../../search/search.html">Cat-alogue Search</a>
-				<a href="../../faq/faq.html">FAQ</a>
-				<a href="../../mission/mission.html">Our Mission</a>
-				<a href="../../team/team.html">Our Team</a>
-
-
+		<a href="../index/index.html">Home</a>
+		<a href="../search/search.html">Cat-alogue Search</a>
+		<a href="../faq/faq.html">FAQ</a>
+		<a href="../mission/mission.html">Our Mission</a>
+		<a href="../team/team.html">Our Team</a>
+		<br />
+	</nav>
+		<!--breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
 		<ul class="breadcrumb">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Adoption Form</a></li>
+			<li><a href="../index/index.html">Home</a></li>
+			<li><a href="../search/search.html">Cat-alogue Search</a></li>
+			<li><a href="../bios/bio-04/bio-04.html">Simba</a></li>
+			<li><a href="#">Adopt</a></li>
 		</ul>
-	</nav> <br>
-	<br>
-	<br>
-	<br>
 
 
-<h5> Fill out the information above for the chosen pet that interests your family. Mamba's Pet Shelter will respond to you in 2-3 business days.</h5>
-
-<ins>Adopt A Pet!</ins> <br>
+<h1>Adopt A Pet!</h1> <br>
 
 <img src="https://storage.googleapis.com/petbacker/images/blog/2017/dog-and-cat-cover.jpg
-" style="width: 135px; height: 100px">
+" style="width: 135px; height: 100px; margin-left: 40px; margin-right: 20px; float: left;">
+<p style="margin-right: 40px; margin-left: 40px;"> Please fill out the application form below.<br /> Mamba's Pet Shelter will respond to you in 2-3 business days.</p>
 
-<fieldset>
+<br/><br/>
+
+<div style="margin-left: 40px; margin-right: 40px;">
+	<fieldset id="shelteruse" >
 	<legend>For Shelter Use Only</legend>
+    <label>Date</label>
+    <input type="text" name="Date" value="04 Nov 2020" disabled>
 
-    Date
-    <input type="text" name="Date" value="10-08-2020" disabled> <br>
+    <label>Pet Type</label>
+	<input type="text" name="pettype" value="Dog" disabled>
 
-    Pet Type
-	<input type="text" name="pettype" value="Cat or Dog" disabled> <br>
+    <label>Pet Name</label>
+	<input type="text" name="petname" value="Simba" disabled>
 
-    Pet Name
-	<input type="text" name="petname" value="Name" disabled>
+	<label>Age</label>
+	<input type="text" name="Age" value="4" disabled>
 
-	Age
-	<input type="text" name="Age" value="Age Of Pet" disabled>
-
-	Gender
-	<input type="text" name="Gender" value="Male or Female" disabled>
 
 </fieldset>
 
 <h4>General Family Information</h4>
-<form>
-	First Name
-	<input type="text" name="firstname">
+<form class="form" action="action_page.php">
+	<p>
+		<label>First Name</label>
+		<input type="text" name="firstname">
+	</p>
+	<p>
+	<label>Last name</label>
+	<input type="text" name="lastname">
+</p>
+<p>
+	<label>Address</label>
+	<input type="text" name="Address">
+</p>
+<p>
+	<label>City</label>
 
-	Last name
-	<input type="text" name="lastname">  <br>
+	<input type="text" name="city">
+</p>
+<p>
 
-	<br>Address
-	<input type="text" name="Address">  <br>
-
-   <br> City
-
-	<input type="text" name="city"> <br>
-
-
-Province <br>
-		<input list="Province"/> <br>
-		<datalist id="Province"/> <br>
+<label>Province</label>
+		<input list="Province"/>
+		<datalist id="Province"/>
 			<option value="Ontario"/>
 			<option value="Quebec"/>
 			<option value="Nova Scotia"/>
@@ -90,90 +95,92 @@ Province <br>
 
 
 </datalist>
-
-Postal Code
+</p>
+<p>
+<label>Postal Code</label>
 			<input type="text" name="postalcode">
-
-
-    Email
-	<input type="text" name="Email"> <br>
-	<br>
-
-	Phone Number
+		</p>
+	<p>
+	<label>Email</label>
+	<input type="text" name="Email">
+</p>
+<p>
+<label>Phone Number</label>
 	<input type="text" name="Phone Number"> <br>
-
-	Phone number type: <br />
+</p>
+<p>
+<label>Phone number type:<br/><br/>&nbsp;</label> 
+<span style="display: inline-block;">
 			<input type="radio" name="phonetype" value="Home Phone" checked /> Home Phone <br />
 			<input type="radio" name="phonetype" value="Cell Phone" /> Cell Phone <br />
 			<input type="radio" name="phonetype" value="Work Phone"/> Work Phone <br/>
-			<br />
+		</span>
+		</p>
+		<p>
+		<label>Does your household have:<br/><br/>&nbsp;</label>
+		<span style="display: inline-block;">
+			<input type="checkbox" name="opt1" value="cat" />Cats <br />
+			<input type="checkbox" name="opt2" value="dog" />Dogs <br />
+			<input type="checkbox" name="opt3" value="child"/>Children
+		</span>
+	</p>
+	<label>Do you rent or own? </label>
+	<select name="housing"> <br>
+		<option value="Rent">Rent</option> <br>
+		<option value="Own">Own</option> <br>
 
-			Do You Currently Own A Cat or Dog? <br />
-			<input type="checkbox" name="opt1" value="Cat" /> Cat <br />
-			<input type="checkbox" name="opt2" value="Dog" /> Dog <br />
-			<input type="checkbox" name="opt3" value="First Time Pet Owner"/>First Time Pet Owner<br/>
-
-			<br />
-
-			Why Do You Wish To own a Pet? <br>
+	</select>
+</p>
+<p>
+<label>Residence type</label>
+	<select name="house type"> <br>
+		<option value="Townhouse">Townhouse</option> <br>
+		<option value="Single family">Single family</option> <br>
+		<option value="Apartment">Apartment</option><br>
+		<option value="other">Other</option><br>
+	</select>
+</p>
+<p>
+		<label>Why do you wish to adopt? <br><br><br><br><br>&nbsp;</label>
 
 			<textarea name="comments" rows="5" cols="30"> Please comment here </textarea> <br>
+		</p>
+	<p>
 
 
-	Do you rent or own?: <br>
-			<select name="housing"> <br>
-				<option value="Rent">Rent</option> <br>
-				<option value="Own">Own</option> <br>
-
-			</select>
-			<br>
-			<br>
-
-	What Type Of Home Do You Live In?:<br>
-			<select name="house type"> <br>
-				<option value="Townhouse">Townhouse</option> <br>
-				<option value="Single family">Single family</option> <br>
-				<option value="Apartment">Apartment</option><br>
-				<option value="other">other</option><br>
-			</select>
-			<br>
-			<br>
-
-
-   Please List a Reference <br>
-   <input type="text" name="References" value="Reference Name">
-   <input type="text" name="References" value="Reference Number">
-
-<br>
-<br>
-
+<p>
+		<label>Please list a reference: </label>
+   <input type="text" name="References" value="Reference Name"> <br><br>
+   <input type="text" name="References" value="Reference Number" style="margin-left: 255px;">
+</p>
+<br/>
 <input type="submit" value="Submit" />
 
 <input type="reset" value="Reset" />
 
 
 </form>
-
+</div>
 <footer>
-			<span class="fleft">
-				<a href="../../contact/contact.html">
-					<i class='far fa-envelope fa-2x'></i>
-					Contact Us
-				</a>
-			</span>
-			<span class="fright">
-				<span>Follow Us</span>
-				<a href="https://www.instagram.com/" target="_blank">
-					<i class='fab fa-instagram fa-2x'></i>
-				</a>
-				<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
-					<i class='fab fa-facebook-square fa-2x'></i>
-				</a>
-				<a href="https://www.twitter.com/" target="_blank">
-					<i class='fab fa-twitter-square fa-2x'></i>
-				</a>
-			</span>
-		</footer>
+	<span class="fleft">
+		<a href="../contact/contact.html">
+			<i class='far fa-envelope fa-2x'></i>
+			Contact Us
+		</a>
+	</span>
+		<span class="fright">
+			<span>Follow Us</span>
+			<a href="https://www.instagram.com/" target="_blank">
+				<i class='fab fa-instagram fa-2x'></i>
+			</a>
+			<a href="https://www.facebook.com/search/pages/?q=pet%20shelter" target="_blank">
+				<i class='fab fa-facebook-square fa-2x'></i>
+			</a>
+			<a href="https://www.twitter.com/" target="_blank">
+				<i class='fab fa-twitter-square fa-2x'></i>
+			</a>
+	</span>
+</footer>
 
 
 </body>
