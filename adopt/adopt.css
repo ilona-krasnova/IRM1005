@@ -1,3 +1,40 @@
+/* WEB FONTS */
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.woff2);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-SemiBold.woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-book-webfont.woff2);
+    font-weight: normal;
+}
+@font-face {
+    font-family: CooperHewitt;
+    src: url(fonts/cooperhewitt-semibold-webfont.woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/roboto-regular.woff2);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/roboto-bold.woff2);
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box; /* width including padding and border */
+}
+
+/* 3 point gradient (body) */
 body {
     background-image: linear-gradient(to right, #ce6f1f, #e9cdab, #e9cdab, #e9cdab, #ce6f1f);
     margin: 0;
@@ -5,6 +42,124 @@ body {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #333333;
+}
+
+main {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    opacity: 1;
+    margin: 0 auto; /* center horizontally */
+}
+
+img#logo {
+    width: 600px;
+    margin: 20px 40px 0 40px;
+}
+
+nav {
+    position: absolute;
+    display: block;
+    top: 250px;
+    left: 200px;
+    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333333;
+}
+
+nav a.urhere {
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+ul.breadcrumb {
+    list-style: none;
+  }
+
+ul.breadcrumb > li {
+    display: inline;
+    font-size: 16px;
+  }
+
+ul.breadcrumb li+li:before {
+  color: #ce6f1f;
+  content: ">\00a0";
+}
+
+
+ul.breadcrumb li > a {
+  color: #ce6f1f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+body {
+    background-image: linear-gradient(to right, #ce6f1f, #e9cdab, #e9cdab, #e9cdab, #ce6f1f);
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+main {
+    position: relative;
+    max-width: 1000px;
+    width: 80%;
+    background-color: white;
+    opacity: 1;
+    margin: 0 auto; /* center horizontally */
+}
+
+img#logo {
+    width: 600px;
+    margin: 20px 40px 0 40px;
+}
+
+nav {
+    position: absolute;
+    display: block;
+    top: 300px;
+    left: 70px;
+    font-family: CooperHewitt, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav a {
+    margin-right: 80px;
+    text-decoration: none;
+    color: #333333;
+}
+
+nav a.urhere {
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+h5 {
+  color: pink;
 }
 
 input[type=text] {
@@ -62,4 +217,36 @@ padding: 12px 20px;
 border: 2px solid red;
 border-radius: 4px;
 background-color: rgb(255,255,255);
+}
+
+footer {
+    background-color: #bf4e4e;
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .fright {
+    float: right;
+}
+
+footer .fleft i {
+    margin-right: 10px;
+}
+
+footer .fright a {
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: #e9cdab;
 }
