@@ -196,17 +196,23 @@ td.description > p {
     overflow-y: hidden;
 }
 
-table a {
+table h2 {
     text-decoration: none;
     color: #bf4e4e;
     font-family: CooperHewitt, Arial, Helvetica, sans-serif;
     font-size: 42px;
     font-weight: bold;
     margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-table a:hover {
+table h2:hover {
     color: #333333;
+}
+
+table a {
+    text-decoration: none;
 }
 
 /* for mobile */

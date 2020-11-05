@@ -75,10 +75,6 @@ nav a {
     color: #333333;
 }
 
-nav a.urhere {
-    font-weight: bold;
-}
-
 nav a:hover {
     color: black;
     text-decoration: underline;
@@ -134,29 +130,39 @@ button:hover{
 
 fieldset
 {
-  background-color: #e9cdab;
   margin: 20px;
+  border-radius: 8px;
 }
 
 legend {
   font-family: CooperHewitt, Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 42px;
+  color: #bf4e4e;
 }
 
-span.f1 {
-  display: inline-block;
-  padding: 0px 115px;
+table {
+  margin-top: 20px;
 }
 
-span.f2 {
-  display: inline-block;
-  padding: 60px;
+td {
+  width: 280px;
 }
 
-span.f3 {
+label {
+display: inline-block;
+width: 150px;
+}
+
+.content {
   display: inline-block;
-  padding: 30px 0px 60px 100px;
+  padding: 15px;
+  margin: 10px;
+  opacity: 0.85;
+}
+
+.content:hover {
+  opacity: 1;
 }
 
 #bottomright {
@@ -171,8 +177,11 @@ input:not([type=checkbox]):not([type=range]) :not([type=radio]), select {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-select {
+select, input[type=number], input[list=petname] {
     background-color: white;
+    width: 100px;
+    border-radius: 8px;
+    height: 30px;
 }
 
 input:focus:not([type=checkbox]):not([type=range]):not([type=radio]){
@@ -194,32 +203,25 @@ input[type=button], input[type=submit], input[type=reset] {
     width: 155px !important;
 }
 
-.content
-{
-  display: inline-block;
-  background-color: rgb(217, 142, 126);
-  padding: 15px;
-  margin: 10px;
-  text-align: center;
-}
-
 .pet
 {
   font-family: CooperHewitt, Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   color: #bf4e4e;
   text-decoration: none;
+  margin: 10px, 50px;
 }
 
-a.pet:hover::before {
+span.pet:hover::before {
   content: url("img/dog-paw.png")
 }
 
 div.content:hover img {
-  opacity: 0.5;
-  transform: scale(0.75, 0.75);
+  transform: scale(105%);
 }
+
+
 
 .mainbody
 {
@@ -234,6 +236,7 @@ footer {
     padding: 15px 40px;
     color: white;
     font-weight: bold;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 footer i {
@@ -263,11 +266,13 @@ footer a:hover {
 
 /* for mobile */
 @media only screen and (max-width: 599px) {
-    img#logo {
-        width: 100%
-    }
-    main nav {
-        position: relative;
-        top: 0;
-        left: 40px;
-    }
+  img#logo {
+    width: 100%
+  }
+  
+  main nav {
+    position: relative;
+    top: 0;
+    left: 40px;
+  }
+}
