@@ -10,6 +10,10 @@
 	<!--css stylesheet will control fonts and their sizes, background colour, icon sizes etc-->
 	<link rel="stylesheet" type="text/css" href="matched.css" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="../json/database.json"></script>
+	<script src="matched.js"></script>
 
 </head>
 
@@ -34,10 +38,23 @@
 			</ul>
 
 		<article>
-		<p id="didactic">Say "Hi" to the pets you matched! Click their names to learn more about them!</p>
+		<p id="didactic">Say "Hi" to the pets you matched. Click their names to learn more about them!</p>
 
-		<table>
-			<tr>
+		<table id="matches">
+			<tr id="template" style="display: none;">
+				<td>
+					<a href="">
+						<img src="" height="250px">
+					</a>
+				</td>
+				<td class="description">
+					<a href=""><h2></h2></a>
+					<br />
+					<p>...</p>
+				</td>
+				</a>
+			</tr>
+			<!-- <tr>
 				<td>
 					<a href="../bios/bio-01/bio-01.html?from=matched">
 						<img src="img/bio-01p.jpg" height="250px">
@@ -79,14 +96,14 @@
 						Aliquam ut nulla et arcu mattis dapibus. Nulla mi enim, condimentum id lobortis non, faucibus eget ex. Duis tincidunt, est id semper eleifend, risus libero consectetur sapien, id tincidunt elit tortor vitae lacus. Fusce convallis nibh diam. Morbi neque elit, hendrerit in ante id, tristique porta sem. Fusce a lobortis magna, mollis malesuada tellus. Ut rhoncus ante sed nisl finibus ullamcorper. Proin posuere lacus sed mi pellentesque, et tempus lacus rutrum. Duis faucibus est nec consequat ultrices. Proin vel semper nunc. 
 					</p>
 				</td>
-			</tr>
+			</tr> -->
 		</table>
-		<h3>Javascript: On page load</h3>
+		<!-- <h3>Javascript: On page load</h3>
 		<ol>
 			<li>read list of matched pet IDs from cookie</li>
 			<li>extract information about these pets from database</li>
 			<li>insert information into html</li>
-		</ol>
+		</ol> -->
 		</article>
 	
 		<br />

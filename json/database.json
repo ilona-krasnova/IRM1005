@@ -1,0 +1,129 @@
+// Browser would not allow to read json file from file:// Using jQuery to load json
+// used solution from https://stackoverflow.com/questions/19706046/how-to-read-an-external-local-json-file-in-javascript
+
+json = `
+{
+    "profiles": [
+        {
+            "bioNo": "bio-01",	
+            "species": "cat",
+            "name": "Paprika",
+            "age": 11,
+            "sex": "F",
+            "children": true,
+            "cats": false,
+            "dogs": false,
+            "activity": "High",
+            "size": "Small",
+            "admissionDate": "2020-04-22",
+            "bio": "Paprika may be an older cat, but her age doesn't stop her from enjoying life to the fullest! She is an outgoing, affectionate cat that would thrive with a family -- as long as she's the only pet!.",
+            "coordinator": "Ilona"
+        },
+        {
+            "bioNo": "bio-02",	
+            "species": "dog",
+            "name": "Charlie",
+            "age": 2,
+            "sex": "M",
+            "children": false,
+            "cats": false,
+            "dogs": false,
+            "activity": "Low",
+            "size": "Large",
+            "admissionDate": "2019-10-01",
+            "bio": "Charlie needs calm and quiet. This gentle giant is easily started, but once he gets to know you he loves scratches behind the ears and cuddles. He is looking for his forever home with a patient and experienced human.",
+            "coordinator": "Ilona"
+        },
+        {
+            "bioNo": "bio-03",	
+            "species": "cat",
+            "name": "Miso",
+            "age": 3,
+            "sex": "M",
+            "children": false,
+            "cats": false,
+            "dogs": true,
+            "activity": "Medium",
+            "size": "Small",
+            "admissionDate": "2019-03-14",
+            "bio": "Miso is an independent cat that likes to explore in the backyard. Your best bet for getting his attention is his favorite toy, the laser pointer. He likes his ears scratched but doesn't like it when people touch his tail.",
+            "coordinator": "Phoebe"
+        },
+        {
+            "bioNo": "bio-04",	
+            "species": "dog",
+            "name": "Simba",
+            "age": 4,
+            "sex": "F",
+            "children": true,
+            "cats": true,
+            "dogs": true,
+            "activity": "Medium",
+            "size": "Medium",
+            "admissionDate": "2020-01-05",
+            "bio": "Simba is an energetic and playful who enjoys being the centre of attention. She loves being around many people and will instantly light up a room. All she needs is a loving family that can keep up with her uplifting and cheerful energy!",
+            "coordinator": "Luskia"
+        },
+        {
+            "bioNo": "bio-05",	
+            "species": "cat",
+            "name": "Cash",
+            "age": 5,
+            "sex": "F",
+            "children": true,
+            "cats": false,
+            "dogs": true,
+            "activity": "High",
+            "size": "Small",
+            "admissionDate": "2019-02-19",
+            "bio": "Cash the cat is very gentle and friendly. She loves to stay active and can be quite the curious cat! She is very loving, just the right amount of cuddles will be enough to keep her happy. Although she is shy, a perfect family will be the key to get her to open up!",
+            "coordinator": "Luskia"
+        },
+        {
+            "bioNo": "bio-06",	
+            "species": "dog",
+            "name": "Coco",
+            "age": 9,
+            "sex": "M",
+            "children": true,
+            "cats": false,
+            "dogs": false,
+            "activity": "High",
+            "size": "Medium",
+            "admissionDate": "2014-09-01",
+            "bio": "Coco loves to receive lots of attention and love! Coco's favourite things are going to the park, and going for walks. And make sure that he has enough toys to play with, because he spends most of his time playing.",
+            "coordinator": "Yasmeen"
+        },
+        {
+            "bioNo": "bio-07",	
+            "species": "cat",
+            "name": "Winston",
+            "age": 0.5,
+            "sex": "M",
+            "children": false,
+            "cats": true,
+            "dogs": false,
+            "activity": "Low",
+            "size": "Small",
+            "admissionDate": "2020-07-29",
+            "bio": "Winston prefers to sleep most of the time, so be sure to purchase the comfiest bed that can go in a nice sunny spot. When Winston is awake, he loves to be cuddled gently. Quiet atmospheres are what Winston prefers, so make sure that he is not around too many people.",
+            "coordinator": "Yasmeen"
+        },
+        {
+            "bioNo": "bio-08",	
+            "species": "dog",
+            "name": "Mamba",
+            "age": 1,
+            "sex": "M",
+            "children": false,
+            "cats": true,
+            "dogs": true,
+            "activity": "High",
+            "size": "Medium",
+            "admissionDate": "2020-06-27",
+            "bio": "Mamba is recovering from a sprained ankle, but otherwise, is a strong and healthy dog. One of his talents is learning new tricks. He likes playing with other animals and would adjust well to a home with other pets.",
+            "coordinator": "Phoebe"
+        }
+    ]
+}
+`;
