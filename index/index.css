@@ -135,6 +135,10 @@ button {
     border-radius: 8px;
 }
 
+button.small {
+    min-width: 50px;
+}
+
 button:hover{
     opacity: .85;
 }

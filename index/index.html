@@ -43,7 +43,7 @@
 				<form id="seeking">
 					<i id="spin" class="fas fa-paw"></i>
 					<span>&nbsp; I am looking for: &nbsp;</span>
-					<input name=pettype type="radio" value="either"> either </input> &nbsp;
+					<input name=pettype type="radio" value="either" checked="checked"> either </input> &nbsp;
 					<input name=pettype type="radio" value="cat"> a cat </input> &nbsp;
 					<input name=pettype type="radio" value="dog"> a dog </input> &nbsp;
 					<span id="count"></span>
@@ -57,7 +57,7 @@
 					<img src="img/bio-01.jpg" width="400px"/>	
 				</td>
 				<td id="info">
-					<h1>Paprika</h1>
+					<h1 id="title">Paprika</h1>
 						<p>
 							<label>Age:</label>
 							&nbsp; <span class="value" id="age">11</span>
@@ -90,9 +90,9 @@
 					<br />
 					<div>
 						<!---->
-						<!-- <button class="small" id="prev" -->
+						<button type="button" class="small" id="prev">&lt;&lt;</button>
 						<button type="button" id ="like">Like! <i class='fas fa-heart'></i></button>
-						<button type="button" id="next">Next!</i></button>
+						<button type="button" class="small" id="next">&gt;&gt;</i></button> &nbsp; &nbsp; &nbsp;
 						<a href="../matched/matched.html"><button id="mymatches">My matches</button></a>
 					</div>
 				</td>

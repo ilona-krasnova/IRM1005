@@ -5,7 +5,8 @@ var allData;
 $(document).ready(function() {
     allData = readJson();
     filterChange();
-    $("#next").click(unmatchProfile);
+    $("#next").click(nextProfile);
+    $("#prev").click(prevProfile);
     $("#like").click(matchProfile);
     $("input[type=radio]").change(filterChange);
 });
@@ -43,7 +44,9 @@ function filterChange() {
     console.log("value", value);
     filterProfiles(value);
     createPal(profiles[current]);
-    $("#count").html(`(${profiles.length} profiles)`)
+
+    // $("#count").html("(" + profiles.length + " profiles)")
+    document.getElementById("count").innerHTML = "(" + profiles.length + " profiles)";
 }
 
 function getFilterValue() {
@@ -90,13 +93,15 @@ function removeSelectedFromCookie(bioNo) {
     writeSelectedToCookie(result);
 }
 
-function matchProfile() {
-    addSelectedToCookie(profiles[current].bioNo);
-    nextProfile();
-}
 
-function unmatchProfile() {
-    removeSelectedFromCookie(profiles[current].bioNo);
+function matchProfile() {
+    var selected = readSelectedFromCookie();
+    if (selected.includes(profiles[current].bioNo)) {
+        removeSelectedFromCookie(profiles[current].bioNo);
+    }
+    else {
+        addSelectedToCookie(profiles[current].bioNo);
+    }
     nextProfile();
 }
 
@@ -109,6 +114,14 @@ function nextProfile() {
     current++;
     if (current >= profiles.length) {
         current = 0;
+    }
+    createPal(profiles[current]);
+}
+
+function prevProfile() {
+    current--;
+    if (current < 0) {
+        current = profiles.length - 1;
     }
     createPal(profiles[current]);
 }
@@ -130,15 +143,12 @@ function createPal(profile){
 
     var selected = readSelectedFromCookie();
     if (selected.includes(profile.bioNo)) {
-        console.log("heart");
-        $("#petpal h1").append('&nbsp;<i class="fas fa-heart"></i>');
-        // console.log($("#petpal h1"));
-        $("#like").html("Next");
-        $("#next").html("Not for me");
+        // $("#petpal h1").append('&nbsp;<i class="fas fa-heart"></i>');
+        document.getElementById("title").innerHTML += '&nbsp;<i class="fas fa-heart"></i>';
+        $("#like").html("Not for me");
     }
     else {
         $("#like").html("Like! <i class='fas fa-heart'></i>");
-        $("#next").html("Next");
     }
     $("#mymatches").html("My matches (" + selected.length + ")");
 }
