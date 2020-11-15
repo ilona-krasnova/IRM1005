@@ -1,13 +1,13 @@
-var current = 5;
+var current = 0;
 var profiles = [];
+var allData;
 
 $(document).ready(function() {
-    var allData = readJson();
-     profiles = allData.profiles;
-    createPal(profiles[current]);
+    allData = readJson();
+    filterChange();
     $("#next").click(unmatchProfile);
     $("#like").click(matchProfile);
-
+    $("input[type=radio]").change(filterChange);
 });
 
 function readJson() {
@@ -18,6 +18,42 @@ function readJson() {
     // used solution from https://stackoverflow.com/questions/19706046/how-to-read-an-external-local-json-file-in-javascript
     var data = JSON.parse(json);
     return data;
+}
+
+function filterProfiles(species) {
+    var result = [];
+    if (species === "either") {
+        profiles = allData.profiles;
+        return;
+    }
+    console.log("species", species);
+    for (var i = 0; i < allData.profiles.length; i++) {
+        console.log("allData.profiles", allData.profiles[i].species);
+        // sourced from https://www.w3schools.com/jsref/jsref_includes_array.asp
+        if (allData.profiles[i].species === species) {
+            result.push(allData.profiles[i]);
+        }
+    }
+    profiles = result;
+    current = 0;
+}
+
+function filterChange() {
+    var value = getFilterValue();
+    console.log("value", value);
+    filterProfiles(value);
+    createPal(profiles[current]);
+    $("#count").html(`(${profiles.length} profiles)`)
+}
+
+function getFilterValue() {
+    if ($("input[type=radio][value=cat]").get(0).checked) {
+        return "cat";
+    }
+    if ($("input[type=radio][value=dog]").get(0).checked) {
+        return "dog";
+    }
+    return "either";
 }
 
 function readSelectedFromCookie() {
@@ -36,27 +72,21 @@ function addSelectedToCookie(bioNo) {
     // console.log(selected)
     selected.push(bioNo);
     writeSelectedToCookie(selected);
-    console.log(selected)
 
 }
 
 function removeSelectedFromCookie(bioNo) {
-    console.log("removing bioNo", bioNo);
     var selected = readSelectedFromCookie();
-    console.log("selected", selected);
     if (!selected.includes(bioNo)) {
         return;
     }
     var result = [];
     for (var i = 0; i < selected.length; i++) {
-        console.log("selected[i]", selected[i]);
         // sourced from https://www.w3schools.com/jsref/jsref_includes_array.asp
         if (selected[i] !== bioNo) {
             result.push(selected[i]);
-            console.log("result", result);
         }
     }
-    console.log("final", result);
     writeSelectedToCookie(result);
 }
 
@@ -110,4 +140,5 @@ function createPal(profile){
         $("#like").html("Like! <i class='fas fa-heart'></i>");
         $("#next").html("Next");
     }
+    $("#mymatches").html("My matches (" + selected.length + ")");
 }
