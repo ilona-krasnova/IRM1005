@@ -42,13 +42,14 @@
 			<div>
 				<form id="seeking">
 					<i id="spin" class="fas fa-paw"></i>
-					<span>&nbsp; I am looking for a: &nbsp;</span>
-					<input name=pettype type="radio" value="cat" checked="checked"> cat &nbsp;</input>	
-					<input name=pettype type="radio" value="dog"> dog</input>
+					<span>&nbsp; I am looking for: &nbsp;</span>
+					<input name=pettype type="radio" value="either"> either </input> &nbsp;
+					<input name=pettype type="radio" value="cat"> a cat </input> &nbsp;
+					<input name=pettype type="radio" value="dog"> a dog </input>
 				</form>
 				<br />
 			</div>	
-			<table>
+			<table id="petpal">
 				<tr>
 				<td>
 					<!--Petpal function will go here. image is a placeholder.-->
@@ -58,65 +59,47 @@
 					<h1>Paprika</h1>
 						<p>
 							<label>Age:</label>
-							<span class="value">&nbsp;11</span>
+							&nbsp; <span class="value" id="age">11</span>
 						</p>
 						<p>
 							<label>Sex:</label>
-							<span class="value">&nbsp;F</span>
+							&nbsp; <span class="value" id="sex">F</span>
 						</p>
 						<p>
 							<label>Good with: <br/> <br/> &nbsp;</label>
 							<span class="value">
-								&nbsp; &#9745; Children <br />
-								&nbsp; &#9744; Cats <br />
-								&nbsp; &#9744; Dogs <br />
+								&nbsp; <span id="children">&#9745;</span> &nbsp;Children <br />
+								&nbsp; <span id="cats">&#9744;</span> &nbsp;Cats <br />
+								&nbsp; <span id="dogs">&#9744;</span> &nbsp;Dogs <br />
 							</span>
 						</p>
 						<p>
 							<label>Activity:</label>
-							<span class="value">&nbsp; High</span><br />
+							&nbsp; <span class="value" id="activity">High</span><br />
 						</p>
 						<p>	
 							<label>Size:</label>
-							<span class="value">&nbsp; Small</span><br />
+							&nbsp; <span class="value" id="size">Small</span><br />
 						</p>
 						<p>
 							<label>Arrived:</label>
-							<span class="value">&nbsp; 22 Apr 2020</span><br />
+							&nbsp; <span class="value" id="admissionDate">22 Apr 2020</span><br />
 						</p>
-						<p>Paprika may be an older cat, but her age doesn't stop her from enjoying life to the fullest! She is an outgoing, affectionate cat that would thrive with a family -- as long as she's the only pet!</p>
+						<p id="bio">Paprika may be an older cat, but her age doesn't stop her from enjoying life to the fullest! She is an outgoing, affectionate cat that would thrive with a family -- as long as she's the only pet!</p>
 					<br />
 					<div>
 						<!---->
-						<button type="button" onclick="if (confirm('View matched pets or click cancel to continue looking!')) {location='../matched/matched.html';}">Like! <i class='fas fa-heart'></i></button>
-						<button type="button" onclick="alert('todo: show next profile')">Not for me! <i class="fas fa-refresh"></i></button>
+						<button type="button" id ="like">Like! <i class='fas fa-heart'></i></button>
+						<button type="button" id="next">Next!</i></button>
 						<a href="../matched/matched.html"><button>My matches</button></a>
 					</div>
 				</td>
 				</tr>
 			</table>
-			<h3 id="nfm">Javascript (hover on me!)</h3>
-			<h4>On load</h4>
-			<ol>
-				<li>select: </li>
-				<ul>
-				<li>cat</li>
-				<li>dog</li>
-				</ul>
-				<li>load oldest profile</li>
-			</ol>
-			<h4>On "like" press:</h4>
-			<ol>
-				<li>save pet id to cookie</li>
-				<li>ask to go to matched list or continue searching</li>
-			</ol>
-			<h4>On "not for me" press</h4>
-			<ol>
-				<li>select next id</li>
-				<li>load profile</li>
-			</ol>
 		</article>
-	
+		<br />	
+		<br />
+		<br />
 		<br />
 		<!--footer-->
 		<footer>

@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    // //simulation for petpal results
-    // writeSelectedToCookie(["bio-01", "bio-02", "bio-04"]);
-
     var selected = readSelectedFromCookie();
     console.log("selected", selected);
     var first = selected[0];
@@ -31,11 +28,6 @@ function readJson() {
     // used solution from https://stackoverflow.com/questions/19706046/how-to-read-an-external-local-json-file-in-javascript
     var data = JSON.parse(json);
     return data;
-}
-
-function writeSelectedToCookie(selected) {
-    // sourced from https://stackoverflow.com/questions/1458724/how-do-i-set-unset-a-cookie-with-jquery
-    $.cookie('match', JSON.stringify(selected));
 }
 
 function readSelectedFromCookie() {
