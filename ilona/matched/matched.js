@@ -53,7 +53,7 @@ function filterSelected(profiles, selectedIds) {
 function createMatch(profile){
     // sourced from https://www.w3schools.com/jsref/met_node_clonenode.asp
     $("#template h2").html(profile.name);
-    var href = "../bios/" + profile.bioNo + "/" + profile.bioNo + ".html?from=matched";
+    var href = "../../bios/" + profile.bioNo + "/" + profile.bioNo + ".html?from=matched";
     $("#template a").attr("href", href);
     $("#template img").attr("src", "img/" + profile.bioNo + "p.jpg");
     $("#template p").html(profile.bio);

@@ -129,7 +129,7 @@ function prevProfile() {
 function createPal(profile){
     // sourced from https://www.w3schools.com/jsref/met_node_clonenode.asp
     $("#petpal h1").html(profile.name);
-    $("#petpal img").attr("src", "../bios/"+ profile.bioNo +"/img/"+ profile.bioNo +".jpg");
+    $("#petpal img").attr("src", "../../bios/"+ profile.bioNo +"/img/"+ profile.bioNo +".jpg");
     $("#age").html(profile.age); 
     $("#sex").html(profile.sex);   
     //sourced from https://stackoverflow.com/questions/10270351/how-to-write-an-inline-if-statement-in-javascript
