@@ -12,15 +12,17 @@
 	<!--Will add arrows on the far right of the buttons that will change when the buttons are opened and closed (will add for JavaScript part of project)-->
 	<script type="text/javascript">
 		
-		function hideShow(ele)
+		function hideShow(ele, chevron)
 		{
 			if (ele.style.display === "block") 
    			{
  				ele.style.display = "none";
+ 				document.getElementById(chevron).className = "fa fa-chevron-down";
  			} 
    		 	else 	
    		 	{
     	 		ele.style.display = "block";
+    	 		document.getElementById(chevron).className = "fa fa-chevron-up";
    			}
 		}
 
@@ -47,7 +49,10 @@
 		</ul>
 	<h5>Frequently Asked Questions</h5>
 	<arcticle>
-		<div class="collapsible" onclick="hideShow(this.nextElementSibling)"><b>What you need to have before you adopt a dog:</b></div>
+		<div class="collapsible" onclick="hideShow(this.nextElementSibling, '1')">
+			<b>What you need to have before you adopt a dog:</b>
+			<Span class="arrow"><i id="1" class="fas fa-chevron-down"></i></Span>
+		</div>
 		<div class="content">
 		<ol>
 			<li>Dog bed</li>
@@ -61,7 +66,10 @@
 		</ol>
         </div>
 	<div/>
-		<div class="collapsible" onclick="hideShow(this.nextElementSibling)"><b>What you need to have before you adopt a cat:</b></div>
+		<div class="collapsible" onclick="hideShow(this.nextElementSibling, '2')">
+			<b>What you need to have before you adopt a cat:</b>
+			<Span class="arrow"><i id="2" class="fas fa-chevron-down"></i></Span>
+		</div>
 		<div class="content">
 		<ol>
 			<li>Collar</li>
@@ -74,7 +82,10 @@
 		</ol>
 	    </div>
 	<div/>
-		<div class="collapsible" onclick="hideShow(this.nextElementSibling)"><b>What should I know before I adopt?</b></div>
+		<div class="collapsible" onclick="hideShow(this.nextElementSibling, '3')">
+			<b>What should I know before I adopt?</b>
+			<Span class="arrow"><i id="3" class="fas fa-chevron-down"></i></Span>
+		</div>
 		<div class="content">
 		<ul>
 			<li>Make sure that you have enough time to take care of a pet, they need a lot of work. They need attention, to be taken to the vet, fed, groomed, and more.</li>
