@@ -27,7 +27,7 @@ function filterProfiles(species) {
         profiles = allData.profiles;
         return;
     }
-    console.log("species", species);
+    // console.log("species", species);
     for (var i = 0; i < allData.profiles.length; i++) {
         console.log("allData.profiles", allData.profiles[i].species);
         // sourced from https://www.w3schools.com/jsref/jsref_includes_array.asp
