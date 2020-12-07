@@ -9,6 +9,10 @@
 	<link rel="icon" type="image/icon" href="../../favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../search/search.css" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="../../json/database.json"></script>
+	<script src="search.js"></script>
 </head>
 
 <body>
@@ -31,83 +35,78 @@
 		<br />
 
 		<fieldset>
-			<form>
-				<legend>Filters</legend>
-					<table>
-						<tr>
-							<td>
-								<span id=pettype>
-									<input type= "radio" name= "pettype" value= "cats">
-									<label>Cats</label>
-									<br />
-									<input type= "radio" name= "pettype" value= "dogs">
-									<label>Dogs</label>
-								<span>
-								<span>
-									<p>Sex:</p>
-									<input type= "checkbox" name= "sex" value= "male">Male<br />
-									<input type= "checkbox" name= "sex" value= "female">Female
-								</span>
-							</td>
-							<td>
-								<span>
-									<p>Good with:</p>
-									<input type= "checkbox" name= "goodw" value= "dogs">Dog<br />
-									<input type= "checkbox" name= "goodw" value= "cats">Cats<br />
-									<input type= "checkbox" name= "goodw" value= "children">Children
-								</span>
-							</td>
-							<td>
-								<label>Size:</label>
-								<select name= "size">
-									<option value= "small">Small</options>
-									<option value= "medium">Medium</options>
-									<option value= "large">Large</options>
-								</select>
-								<br />
-								<label>Age:</label>
-								<input type= "number" id= "age" name= "age" >
-								<br />
-								<label>Activity Level:</label>
-								<select name= "size">
-									<option value= "low">Low</options>
-									<option value= "medium">Medium</options>
-									<option value= "high">High</options>
-								</select>
-								<br />
-								<label>Search by Pet Name</label>
-								<input list= "petname"/>
-									<datalist id= "petname">
-										<option value= "Paprika"/>
-										<option value= "Charlie"/>
-										<option value= "Miso"/>
-										<option value= "Simba"/>
-										<option value= "Cash"/>
-										<option value= "Coco"/>
-										<option value= "Winston"/>
-										<option value= "Mamba"/>
-									</datalist>
-							</td>
-						</tr>
-					</table>
-					<span id= "bottomright">
-							<button type= "button" onclick="alert('insert javascript later')"> Show All</button>
-					</span>
-					<span id= "bottomright">
-						<input type= "submit" value="Submit"/>
-					</span>
-			</form>
+		<legend>Filters</legend>
+			<table>
+				<tr>
+					<td>
+						<span id=pettype>
+							<input type= "radio" name= "pettype" value= "cats" onclick="if(this.checked){showCats()}">
+							<label>Cats</label>
+							<br />
+							<input type= "radio" name= "pettype" value= "dogs" onclick="if(this.checked){showDog()}">
+							<label>Dogs</label>
+						<span>
+						<span>
+							<p>Sex:</p>
+							<input type= "checkbox" name= "sex" value= "male" onclick="if(this.checked){showMale()}">Male<br />
+							<input type= "checkbox" name= "sex" value= "female" onclick="if(this.checked){showFemale()}">Female
+						</span>
+					</td>
+					<td>
+						<span>
+							<p>Good with:</p>
+							<input type= "radio" name= "goodw" value= "dogs" onclick="if(this.checked){showGWDog()}">Dog<br />
+							<input type= "radio" name= "goodw" value= "cats" onclick="if(this.checked){showGWCat()}">Cats<br />
+							<input type= "radio" name= "goodw" value= "children" onclick="if(this.checked){showGWkid()}">Children
+						</span>
+					</td>
+					<td>
+						<label>Size:</label>
+						<select name= "size">
+							<option value= "small">Small</options>
+							<option value= "medium">Medium</options>
+							<option value= "large">Large</options>
+						</select>
+						<br />
+						<label>Age:</label>
+						<input type= "number" id= "age" name= "age" >
+						<br />
+						<label>Activity Level:</label>
+						<select name= "size">
+							<option value= "low">Low</options>
+							<option value= "medium">Medium</options>
+							<option value= "high">High</options>
+						</select>
+						<br />
+						<label>Search by Pet Name</label>
+						<input list= "petname"/>
+							<datalist id= "petname">
+								<option value= "Paprika"/>
+								<option value= "Charlie"/>
+								<option value= "Miso"/>
+								<option value= "Simba"/>
+								<option value= "Cash"/>
+								<option value= "Coco"/>
+								<option value= "Winston"/>
+								<option value= "Mamba"/>
+							</datalist>
+					</td>
+				</tr>
+			</table>
+			<span id= "bottomright">
+					<button type= "button" onclick="showAll()"> Show All</button>
+			</span>
 		</fieldset>
 		<br />
 		<article>
-			<a href="../../bios/bio-01/bio-01.html?from=search">	
+			<a id= "01" href="../../bios/bio-01/bio-01.html?from=search">
 				<div class= "content">
 					<img src="../search/img/bio-01p.jpg" alt= "Bio 01 preview" height="250px" width="250px">
 					<br />
 					<span class= "pet">Paprika</span>
 				</div>
 			</a>
-			<a href="../../bios/bio-02/bio-02.html?from=search">
+			<a id= "02" href="../../bios/bio-02/bio-02.html?from=search">
 				</div>
 				<div class= "content">
 					<img src="../search/img/bio-02p.jpg" alt= "Bio 02 preview" height="250px" width="250px">
@@ -115,42 +114,42 @@
 					<span class= "pet">Charlie</span>
 				</div>
 			</a>
-			<a href="../../bios/bio-03/bio-03.html?from=search">
+			<a id= "03" href="../../bios/bio-03/bio-03.html?from=search">
 				<div class= "content">
 					<img src="../search/img/bio-03p.jpg" alt= "Bio 03 preview" height="250px" width="250px">
 					<br />
 					<span class= "pet">Miso</span>
 				</div>
 			</a>
-			<a href="../../bios/bio-04/bio-04.html?from=search">
+			<a id= "04" href="../../bios/bio-04/bio-04.html?from=search">
 				<div class= "content">
 					<img src="../search/img/bio-04p.jpg" alt= "Bio 04 preview" height="250px" width="250px">
 					<br />
 					<span class= "pet">Simba</span>
 				</div>
 			</a>
-			<a href="../../bios/bio-05/bio-05.html?from=search">
+			<a id= "05" href="../../bios/bio-05/bio-05.html?from=search">
 				<div class= "content">
 					<img src="../search/img/bio-05p.jpg" alt= "Bio 05 preview" height="250px" width="250px">
 					<br />
 					<span class= "pet">Cash</span>
 				</div>
 			</a>
-			<a href="../../bios/bio-06/bio-06.html?from=search">
+			<a id= "06" href="../../bios/bio-06/bio-06.html?from=search">
 				<div class= "content">
 					<img src="../search/img/bio-06p.jpg" alt= "Bio 06 preview" height="250px" width="250px">
 					<br />
 					<span class= "pet">Coco</span>
 				</div>
 			</a>
-			<a href="../../bios/bio-07/bio-07.html?from=search">
+			<a id= "07" href="../../bios/bio-07/bio-07.html?from=search">
 				<div class= "content">
 					<img src="../search/img/bio-07p.jpg" alt= "Bio 07 preview" height="250px" width="250px">
 					<br />
 					<span class= "pet">Winston</span>
 				</div>
 			</a>
-			<a href="../../bios/bio-08/bio-08.html?from=search">
+			<a id= "08" href="../../bios/bio-08/bio-08.html?from=search">
 				<div class= "content">
 					<img src="../search/img/bio-08p.jpg" alt= "Bio 08 preview" height="250px" width="250px">
 					<br />
