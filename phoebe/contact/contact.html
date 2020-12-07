@@ -9,6 +9,10 @@
 	<link rel="icon" type="image/icon" href="../../favicon.ico">
 	<link rel="stylesheet" type="text/css" href="contact.css" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="../../json/database.json"></script>
+	<script src="contact.js"></script>
 </head>
 
 <body>
@@ -48,14 +52,21 @@
 
 			<fieldset>
 				<legend>Feedback</legend>
-				<form>
-					Name:
-					<input type= "text" name= "name"/><br />
-					<br />
-					<textarea name= "feedback" rows= "10" cols= "30">Tell us what you think!</textarea><br />
-					<input type= "submit" value= "submit"/>
-				</form>
+				Name:
+				<input id="name" type= "text" name= "name"/><br />
+				<br />
+				<textarea id="feedback" name= "feedback" rows= "10" cols= "30">Tell us what you think!</textarea><br />
+				<button onclick="addComment()">Submit</button>
 			</fieldset>
+		<br />
+		<div id="commentSection">
+			<div class="comments" id="fcom">
+				<h3>Bob</h3>
+				<p id="firstComment">said: Great customer service!</p>
+				<button onclick="updateComment(this)">Update</button>
+				<button onclick="deleteComment()">Delete</button>
+			</div>
+		</div>
 		</article>
 
 		<br />
