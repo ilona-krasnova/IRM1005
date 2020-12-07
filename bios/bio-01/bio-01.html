@@ -10,7 +10,8 @@
 	<!--css stylesheet will control fonts and their sizes, background colour, icon sizes etc-->
 	<link rel="stylesheet" type="text/css" href="bio-01.css" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="bio-01.js"></script>
 </head>
 
 <body>
@@ -31,10 +32,9 @@
 				<!-- breadcrumb navigation; add CSS to make inline as shown here: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
 				<ul class="breadcrumb">
 					<li><a href="../../ilona/index/index.html">Home</a></li>
-					<li><a href="../../ilona/matched/matched.html">PetPal Matched</a></li>
+					<li><a id="from" href="../../ilona/matched/matched.html">PetPal Matched</a></li>
 					<li><a href="#">Paprika</a></li>
 				</ul>
-
 		</header>
 		<article>
 			<table>
@@ -73,15 +73,10 @@
 							<span class="value">&nbsp; 22 Apr 2020</span><br />
 						</p>
 						<p>Paprika may be an older cat, but her age doesn't stop her from enjoying life to the fullest! She is an outgoing, affectionate cat that would thrive with a family -- as long as she's the only pet!</p>
-						<a href="../../luskia/adopt/adopt.html"><button>Adopt me!</button></a>
+						<a href="../../luskia/adopt/adopt.html?from=bio-01"><button>Adopt me!</button></a>
 					</td>
 				</tr>
 			</table>
-			<h3>Javascript to do:</h3>
-			<ol>
-				<li>read parameter from url (bio may be from search or matched)</li>
-				<li>update breadcrumb</li>
-			</ol>
 		</article>
 		<!-- appendix for grading purposes :)-->
 		<aside>
