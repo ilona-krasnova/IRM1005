@@ -46,9 +46,12 @@
 
 <h1>Adopt A Pet!</h1> <br>
 
-<img src="https://storage.googleapis.com/petbacker/images/blog/2017/dog-and-cat-cover.jpg
+<img id="photo" src ="https://storage.googleapis.com/petbacker/images/blog/2017/dog-and-cat-cover.jpg
 " style="width: 135px; height: 100px; margin-left: 40px; margin-right: 20px; float: left;">
-<p style="margin-right: 40px; margin-left: 40px;"> Please fill out the application form below.<br /> Mamba's Pet Shelter will respond to you in 2-3 business days.</p>
+
+
+
+<p id="para1" style="margin-right: 40px; margin-left: 40px;"> Please fill out the application form below.<br /> Mamba's Pet Shelter will respond to you in 2-3 business days.</p>
 
 
 <br/><br/>
@@ -56,17 +59,17 @@
 <div style="margin-left: 40px; margin-right: 40px;">
 	<fieldset id="shelteruse" >
 	<legend>For Shelter Use Only</legend>
-    <label>Date</label>
-    <input type="text" name="Date" value="04 Nov 2020" disabled>
+  
+    <input id="Date" type="text" name="Date" value="Date" disabled>
 
-    <label>Pet Type</label>
-	<input type="text" name="pettype" value="Dog" disabled>
+    
+	<input type="text" name="pettype" value="Type" disabled >
 
-    <label>Pet Name</label>
-	<input type="text" name="petname" value="Simba" disabled>
+ 
+	<input type="text" name="petname" value="Pet Name" disabled >
 
-	<label>Age</label>
-	<input type="text" name="Age" value="4" disabled>
+
+	<input type="text" name="Age" value="Age" disabled >
 
 
 </fieldset>
@@ -127,7 +130,7 @@
 			<input type="radio" name="phonetype" id="homephone" value="Home Phone" checked /> Home Phone <br />
 			<input type="radio" name="phonetype" value="Cell Phone" /> Cell Phone <br />
 			<input type="radio" name="phonetype" value="Work Phone"/> Work Phone <br/>
-			<button onclick="uncheck()">Uncheck </button>
+			<button>Uncheck </button>
 
 		</span>
 		</p>
