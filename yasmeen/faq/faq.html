@@ -9,25 +9,10 @@
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="faq.css"/>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<!--Will add arrows on the far right of the buttons that will change when the buttons are opened and closed (will add for JavaScript part of project)-->
-	<script type="text/javascript">
-		
-		function hideShow(ele, chevron)
-		{
-			if (ele.style.display === "block") 
-   			{
- 				ele.style.display = "none";
- 				document.getElementById(chevron).className = "fa fa-chevron-down";
- 			} 
-   		 	else 	
-   		 	{
-    	 		ele.style.display = "block";
-    	 		document.getElementById(chevron).className = "fa fa-chevron-up";
-   			}
-		}
-
-	</script>
-
+	
+	<!--JavaScript-->
+	<script src="faq.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"/>-->
 </head>
 
 <body>
@@ -40,7 +25,7 @@
 		<a href="../../yasmeen/faq/faq.html">FAQ</a>
 		<a href="../../yasmeen/mission/mission.html">Our Mission</a>
 		<a href="../../luskia/team/team.html">Our Team</a>
-		<br />
+		<br/>
 	</nav>
 
 		<ul class="breadcrumb">
@@ -98,8 +83,6 @@
 	   </div>
 	</arcticle>
 
-
-
 	<footer>
 		<span class="contact">
 		<a href="../../phoebe/contact/contact.html">
@@ -122,11 +105,8 @@
 	</footer>
 
 
-
 <section>
-	<h1>This is the grading material not covered in my webpages</h1>
-	<h2>(yasmeen)</h2>
-	<h3>This appendix will be deleted from this website later</h3>
+	<h1>This is the grading material not covered in my webpages - Yasmeen</h1>
 
 	<iframe width="400" height="400" src="https://www.youtube.com/embed/_PB65NzG5es" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -143,12 +123,13 @@
 
 	<h4>This tag will be affected by a CSS pseudo element! This will make sure that only the first letter of this heading will have a pink text colour.</h4>
 
-	<form action="action_page.php">
+	<form name="Form1" onsubmit="appendNames()" method="post">  <!--action="action_page.php"-->
 		<fieldset>
 			<legend>Requirements</legend>
-			Text input 1:<br/>
-			<input type="text" name="text input 1"/><br/>
-			Put a password here:<br/>
+			Enter your information here:<br/>
+			First Name <input type="text" name="textInput1"/><br/>
+			Last Name <input type="text" name="textInput2"/><br/>
+			Enter your password here:<br/>
 			<input type="password" name="Put a password here"/><br/>
 			Another text input:<br/>
 			<input type="text" name="another text input" Disabled/><br/>
@@ -188,10 +169,12 @@
 		<br/>
 		<input type="Submit" value="submit"/>
 		<input type="Reset"/>
-	</fieldset>
-</form>
+		</fieldset>
+	</form>
+
 
 </section>
+
 
 </main>
 
