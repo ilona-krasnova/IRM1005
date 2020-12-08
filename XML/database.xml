@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MambasPetRescue>
+	<petBios>
+		<bio1>
+			<type>Cat</type>
+			<name>Paprika</name>
+			<age>11</age>
+			<sex>Female</sex>
+			<goodWith>Children</goodWith>
+			<activity>High</activity>
+			<size>Small</size>
+			<arrived>2020-04-22</arrived>
+			<description>Paprika may be an older cat, but her age doesn't stop her from enjoying life to the fullest! She is an outgoing, affectionate cat that would thrive with a family -- as long as she's the only pet!</description>
+		</bio1>
+
+		<bio2>
+			<type>Dog</type>
+			<name>Charlie</name>
+			<age>2</age>
+			<sex>Male</sex>
+			<goodWith>None</goodWith>
+			<activity>Low</activity>
+			<size>Large</size>
+			<arrived>2019-10-01</arrived>
+			<description>Charlie needs calm and quiet. This gentle giant is easily startled, but once he gets to know you he loves scratches behind the ears and cuddles. He is looking for his forever home with a patient and experienced human.</description>
+		</bio2>
+
+		<bio3>
+			<type>Cat</type>
+			<name>Miso</name>
+			<age>3</age>
+			<sex>Male</sex>
+			<goodWith>Dogs</goodWith>
+			<activity>Medium</activity>
+			<size>Small</size>
+			<arrived>2019-03-14</arrived>
+			<description>Miso is an independent cat that likes explore in the backyard. Your best bet for getting his attention is his favorite toy, the laser pointer. He likes his ears scratched but doesn't like it when people touch his tail.</description>
+		</bio3>
+
+		<bio4>
+			<type>Dog</type>
+			<name>Simba</name>
+			<age>4</age>
+			<sex>Female</sex>
+			<goodWith>Children, Cats, Dogs</goodWith>
+			<activity>Medium</activity>
+			<size>Medium</size>
+			<arrived>2020-01-05</arrived>
+			<description>Simba is an energetic and playful who enjoys being the centre of attention. She loves being around many people and will instantly light up a room. All she needs is a loving family that can keep up with her uplifting and cheerful energy!</description>
+		</bio4>
+
+		<bio5>
+			<type>Cat</type>
+			<name>Cash</name>
+			<age>5</age>
+			<sex>Female</sex>
+			<goodWith>Children, Dogs</goodWith>
+			<activity>High</activity>
+			<size>Small</size>
+			<arrived>2019-02-19</arrived>
+			<description>Cash the cat is very gentle and friendly. She loves to stay active and can be quite the curious cat! She is very loving, just the right amount of cuddles will be enough to keep her happy. Although she is shy, a perfect family will be the key to get her to open up!</description>
+		</bio5>
+
+		<bio6>
+			<type>Dog</type>
+			<name>Coco</name>
+			<age>9</age>
+			<sex>Male</sex>
+			<goodWith>Children</goodWith>
+			<activity>High</activity>
+			<size>Medium</size>
+			<arrived>2014-09-01</arrived>
+			<description>Coco loves to receive lots of attention and love! Coco's favourite things are going to the park, and going for walks. And make sure that he has enough toys to play with, because he spends most of his time playing.</description>
+		</bio6>
+
+		<bio7>
+			<type>Cat</type>
+			<name>Winston</name>
+			<age>0.5</age>
+			<sex>Male</sex>
+			<goodWith>Cats</goodWith>
+			<activity>Low</activity>
+			<size>Small</size>
+			<arrived>2020-07-29</arrived>
+			<description>Winston prefers to sleep most of the time, so be sure to purchase the comfiest bed that can go in a nice sunny spot. When Winston is awake, he loves to be cuddled gently. Quiet atmospheres are what Winston prefers, so make sure that he is not around too many people.</description>
+		</bio7>
+
+		<bio8>
+			<type>Dog</type>
+			<name>Mamba</name>
+			<age>1</age>
+			<sex>Male</sex>
+			<goodWith>Cats, Dogs</goodWith>
+			<activity>High</activity>
+			<size>Medium</size>
+			<arrived>2020-06-27</arrived>
+			<description>Mamba is recovering from a sprained ankle, but otherwise, is a strong healthy dog. One of his talents is learning new tricks. He likes playing with other animals and would adjust weel to a home with other pets.</description>
+		</bio8>
+
+	</petBios>
+</MambasPetRescue>
+
+
+
+
+
+
+	
