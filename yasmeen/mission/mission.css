@@ -293,4 +293,39 @@ footer a:hover {
 }
 
 
+.hidden {
+
+	background-color: white;
+	color: black;
+	outline-style: none;
+	font-family: arial;
+	font-size: 20px;
+
+}
+
+
+
+.hidden:hover {
+
+	background-color: white;
+
+}
+
+
+
+
+#thispara, #mouse, #fade, #in, #out, #disapear {
+
+	background-color: white;
+	color: black;
+	outline-style: none;
+	font-family: arial;
+	font-size: 20px;
+
+}
+
+
+
+
+
 
