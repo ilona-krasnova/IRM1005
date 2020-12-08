@@ -9,11 +9,61 @@
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="mission.css"/>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"/>
+	<script src="mission.js"></script>
+
+	<script>
+
+	$(document).ready(function(){ 
+	$("#click").click(function(){
+		$(".hidden").hide();
+	});
+
+
+	$("#thispara").dblclick(function(){
+		$(this).hide();
+	});
+
+
+	$("#mouse").hover(function(){
+		alert("You hovered over this paragraph");
+	},
+	function(){
+		alert("You exited this paragraph");
+	});
+
+
+	$(".colour").focus(function(){
+		$(this).css("backround-color", "#ae9e9e");
+	});
+
+
+	$(".colour").blur(function(){
+		$(this).css("backround-color", "#cccccc");
+	});
+
+
+	$("#fade1").click(function(){
+		$("#out").fadeOut(5000);
+	});
+
+	$("#fade2").click(function(){
+		$("#in").fadeIn(9000);
+	});
+
+
+
+});
+
+</script>
+
 </head>
 
 <body>
 	<main>
-	<img id="logo" src="../img/logo.png" alt="Mamba's Pet Rescue Logo" width="300px"/>
+	<img id="logo" src="../../img/logo.png" alt="Mamba's Pet Rescue Logo" width="300px"/>
 
 	<nav>
 		<a href="../../ilona/index/index.html">Home</a>
@@ -30,7 +80,7 @@
 		</ul>
 	<h2>Our Mission</h2>
 	<section>
-		<p>Our mission is to find a cat or dog (or both!) that matches you best. Having a pet that matches your personality is so important because it makes you and your pet happy. We also have the goal of rescuing animals that may be stray, lost, or abandoned all around Ottawa. If they are lost, we try our best to return them to the rightful owners. We want to help as many animals as we can because they deserve to have the best care. Finding our cats and dogs loving homes is very important to us.</p> 
+		<p id="element">Our mission is to find a cat or dog (or both!) that matches you best. Having a pet that matches your personality is so important because it makes you and your pet happy. We also have the goal of rescuing animals that may be stray, lost, or abandoned all around Ottawa. If they are lost, we try our best to return them to the rightful owners. We want to help as many animals as we can because they deserve to have the best care. Finding our cats and dogs loving homes is very important to us.</p> 
 	</section>
 
 		<h1><i class="fas fa-dog"></i>We hope you enjoy our website!<i class="fas fa-cat"></i></h1>
@@ -55,6 +105,36 @@
 		</a>
 	    </span>
 	</footer>
+
+	
+	<section>
+		<h3><b>JavaScript Requirments</b></h3>
+
+
+		<p id="disapear"><b>The following 3 sentences will become hidden when you click the button.</b></p>
+		<p class="hidden">This sentence will disapear.</p>
+		<p class="hidden">This sentence will also disapear.</p>
+		<p class="hidden">This third sentence will disapear.</p>
+		<button id="click">Click this button to make sentences disapear!</button><br/>
+	
+		<p id="thispara">When you double click on this sentence it will disapear.</p><br/>
+
+		<p id="mouse">If you hover over this sentence, you will receive an alert.</p><br/>
+
+		<input class="colour" type="text" name="txt1"/>
+		<input class="colour" type="text" name="txt2"/><br/>
+		<br/>
+
+		<button id="fade1">Click this button to make the following fade out.</button>
+		<p id="out">FADE OUT</p>
+		
+		<button id="fade2">Click this button to make the following fade in.</button>
+		<p id="in">FADE IN</p>
+
+
+
+	</section>
+
 
 </main>
 
