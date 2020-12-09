@@ -38,12 +38,12 @@
 	});
 
 
-	$("#colour1").focus(function(){
+	$(".colour").focus(function(){
 		$(this).css("background-color", "#ae9e9e");
 	});
 
 
-	$("#colour2").blur(function(){
+	$(".colour").blur(function(){
 		$(this).css("background-color", "#cccccc");
 	});
 
@@ -138,8 +138,8 @@
 
 		<p id="mouse">If you hover over this sentence, you will receive an alert.</p><br/>
 
-		<input id="colour1" type="text" name="txt1"/>
-		<input id="colour2" type="text" name="txt2"/><br/>
+		<input class="colour" type="text" name="txt1"/>
+		<input class="colour" type="text" name="txt2"/><br/>
 		<br/>
 
 		<button id="fade1">Click this button to make the following fade out.</button>
