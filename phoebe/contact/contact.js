@@ -53,12 +53,11 @@ function addComment()
   document.getElementById("commentSection").appendChild(newDiv);
   }
 
-//var newComment = document.createElement("p");
-//var content = document.createTextNode("said: "+feedback);
-//newComment.appendChild(content);
-//document.getElementById("comments").appendChild(newComment);
-
-//var client = document.createElement("h3");
-//var clientName = document.createTextNode(name);
-//client.appendChild(clientName);
-//document.getElementById("comments").appendChild(client);
+	$(document).ready(function(){
+		$("input").focus(function(){
+			$(this).css("background-color", "#cccccc");
+		});
+		$("input").blur(function(){
+			$(this).css("background-color", "#ffffff");
+		});
+	});
