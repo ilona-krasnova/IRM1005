@@ -38,13 +38,13 @@
 	});
 
 
-	$(".colour").focus(function(){
-		$(this).css("backround-color", "#ae9e9e");
+	$("#colour1").focus(function(){
+		$(this).css("background-color", "#ae9e9e");
 	});
 
 
-	$(".colour").blur(function(){
-		$(this).css("backround-color", "#cccccc");
+	$("#colour2").blur(function(){
+		$(this).css("background-color", "#cccccc");
 	});
 
 
@@ -53,8 +53,26 @@
 	});
 
 	$("#fade2").click(function(){
-		$("#in").fadeIn(9000);
+		$("#in").hide();
+			$("#in").fadeIn(5000);
 	});
+
+
+	$("#panel1").click(function(){
+		$("#panel2").slideToggle(4000);
+
+	});
+
+
+	/*$("#animate").click(Function(){
+		$("#move").animate({
+			left: '100px',
+			height: '+=200px',
+			width: '+=200px'
+		});
+	});*/
+
+
 
 
 });
@@ -73,7 +91,7 @@
 		<a href="../../yasmeen/faq/faq.html">FAQ</a>
 		<a href="../../yasmeen/mission/mission.html">Our Mission</a>
 		<a href="../../luskia/team/team.html">Our Team</a>
-		<br />
+		<br/>
 	</nav>
 
 		<ul class="breadcrumb">
@@ -110,7 +128,7 @@
 
 	
 	<section>
-		<h3><b>JavaQuery Requirments - Yasmeen</b></h3>
+		<h3><b>JQuery Requirments - Yasmeen</b></h3>
 
 
 		<p id="disapear"><b>The following 3 sentences will become hidden when you click the button.</b></p>
@@ -123,8 +141,8 @@
 
 		<p id="mouse">If you hover over this sentence, you will receive an alert.</p><br/>
 
-		<input class="colour" type="text" name="txt1"/>
-		<input class="colour" type="text" name="txt2"/><br/>
+		<input id="colour1" type="text" name="txt1"/>
+		<input id="colour2" type="text" name="txt2"/><br/>
 		<br/>
 
 		<button id="fade1">Click this button to make the following fade out.</button>
@@ -132,6 +150,14 @@
 		
 		<button id="fade2">Click this button to make the following fade in.</button>
 		<p id="in">FADE IN</p>
+
+		<div id="panel1">This is a panel. Click this to close it.</div>
+		<div id="panel2">This panel is open.</div>
+
+		<button id="animate">Click this button to make the following div animate.</button>
+		<div id="move">This div will animate!</div>
+
+
 
 
 
