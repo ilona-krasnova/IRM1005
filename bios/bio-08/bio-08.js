@@ -6,3 +6,12 @@ $(document).ready(function() {
         link.attr("href","../../phoebe/search/search.html");
     }
 });
+
+$(document).ready(function(){
+  $("#adopt").mouseenter(function(){
+    $(".bio").animate({opacity: "0.2"});
+  });
+  $("#adopt").mouseleave(function(){
+    $(".bio").animate({opacity: "1"});
+  });
+});
