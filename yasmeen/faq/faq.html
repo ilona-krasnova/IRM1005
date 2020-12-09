@@ -12,7 +12,7 @@
 	
 	<!--JavaScript-->
 	<script src="faq.js"></script>
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"/>-->
+
 </head>
 
 <body>
@@ -171,6 +171,56 @@
 		<input type="Reset"/>
 		</fieldset>
 	</form>
+
+	<p id="change">HTML content will be changed.</p>
+	<button type="button" onclick="document.getElementById('change').innerHTML='HTML content is now changed!'">Click</button>
+
+	<p id="font">Font size will change.</p>
+	<button type="button" onclick="document.getElementById('font').style.fontSize='25px';">Click</button>
+
+	
+	<div id="remove">
+		<p id="delete1">This first sentence will be deleted!</p>
+		<p id="delete2">This second sentence will not be deleted, but the one above is deleted!</p>
+	</div>
+	
+	<script>
+		var parent = document.getElementById("remove");
+		var child = document.getElementById("delete1");
+		parent.removeChild(child);
+	</script>
+
+	
+
+	<button onclick="setTimeout(myFunction, 2000)">When this button is clicked, an alert will appear after 2 seconds.</button>
+	
+	<script>
+		function myFunction() {
+			alert('This is an alert')
+		}
+	</script>
+
+	
+
+	<div id="update">
+		<p id="replace1">Sentence 1</p>
+		<p id="replace2">Sentence 2</p>
+	</div>
+	
+	<script>
+		var para = document.createElement("p");
+		var node = document.createTextNode("A new sentence!");
+		para.appendChild(node);
+
+		var parent = document.getElementById("update");
+		var child = document.getElementById("replace1");
+		parent.replaceChild(para,child);
+	</script>
+
+
+
+
+
 
 
 </section>
