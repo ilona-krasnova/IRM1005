@@ -1,11 +1,1 @@
-
-
-
-$(document).ready(function(){
-	
-function fade() {
-	$("#fade").fadeIn(3000);
-}
-
-
-});
+//No JavaScript can be applied to mission page.
