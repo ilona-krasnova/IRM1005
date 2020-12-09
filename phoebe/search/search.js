@@ -1,8 +1,8 @@
-$(document).ready( function() {
+$(document).ready(
 
-	$(".all").hide();
-
-});
+	function() {
+		$(".all").hide();}
+	);
 
 function showAll(){
 	$(".all").fadeOut();
@@ -159,3 +159,9 @@ function showAct() {
 	  $("#08").fadeIn(1000);
 	}
 }
+
+$(document).ready(function(){
+	$("#flip").dblclick(function(){
+		$("#panel"). slideToggle("slow");
+	});
+});

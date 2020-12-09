@@ -35,57 +35,61 @@
 		<br />
 
 		<fieldset>
-		<legend>Filters</legend>
-			<table>
-				<tr>
-					<td>
-						<span id=pettype>
-							<input type= "radio" name= "pettype" value= "cats" onclick="if(this.checked){showCat()}">
-							<label>Cats</label>
+			<div id="flip">
+				<legend>Filters (doubleclick)</legend>
+			</div>
+			<div id= "panel">
+				<table>
+					<tr>
+						<td>
+							<span id=pettype>
+								<input type= "radio" name= "pettype" value= "cats" onclick="if(this.checked){showCat()}">
+								<label>Cats</label>
+								<br />
+								<input type= "radio" name= "pettype" value= "dogs" onclick="if(this.checked){showDog()}">
+								<label>Dogs</label>
+							<span>
+							<span>
+								<p>Sex:</p>
+								<input type= "checkbox" name= "sex" value= "male" onclick="if(this.checked){showMale()}">Male<br />
+								<input type= "checkbox" name= "sex" value= "female" onclick="if(this.checked){showFemale()}">Female
+							</span>
+						</td>
+						<td>
+							<span>
+								<p>Good with:</p>
+								<input type= "radio" name= "goodw" value= "dogs" onclick="if(this.checked){showGWDog()}">Dog<br />
+								<input type= "radio" name= "goodw" value= "cats" onclick="if(this.checked){showGWCat()}">Cats<br />
+								<input type= "radio" name= "goodw" value= "children" onclick="if(this.checked){showGWkid()}">Children
+							</span>
+						</td>
+						<td>
+							<label>Size:</label>
+							<select id= "size"name= "size" onchange="showSize()">
+								<option value="0"></option>
+								<option value= "small">Small</options>
+								<option value= "medium">Medium</options>
+								<option value= "large">Large</options>
+							</select>
 							<br />
-							<input type= "radio" name= "pettype" value= "dogs" onclick="if(this.checked){showDog()}">
-							<label>Dogs</label>
-						<span>
-						<span>
-							<p>Sex:</p>
-							<input type= "checkbox" name= "sex" value= "male" onclick="if(this.checked){showMale()}">Male<br />
-							<input type= "checkbox" name= "sex" value= "female" onclick="if(this.checked){showFemale()}">Female
-						</span>
-					</td>
-					<td>
-						<span>
-							<p>Good with:</p>
-							<input type= "radio" name= "goodw" value= "dogs" onclick="if(this.checked){showGWDog()}">Dog<br />
-							<input type= "radio" name= "goodw" value= "cats" onclick="if(this.checked){showGWCat()}">Cats<br />
-							<input type= "radio" name= "goodw" value= "children" onclick="if(this.checked){showGWkid()}">Children
-						</span>
-					</td>
-					<td>
-						<label>Size:</label>
-						<select id= "size"name= "size" onchange="showSize()">
-							<option value="0"></option>
-							<option value= "small">Small</options>
-							<option value= "medium">Medium</options>
-							<option value= "large">Large</options>
-						</select>
-						<br />
-						<label>Age:</label>
-						<input type= "number" id= "age" name= "age" onchange="showAge()">
-						<br />
-						<label>Activity Level:</label>
-						<select id="activity" name= "active" onchange="showAct()">
-							<option value="0"></option>
-							<option value= "low">Low</options>
-							<option value= "med">Medium</options>
-							<option value= "high">High</options>
-						</select>
-						<br />
-					</td>
-				</tr>
-			</table>
-			<span id= "bottomright">
-					<button type= "button" onclick="showAll()"> Show All</button>
-			</span>
+							<label>Age:</label>
+							<input type= "number" id= "age" name= "age" onchange="showAge()">
+							<br />
+							<label>Activity Level:</label>
+							<select id="activity" name= "active" onchange="showAct()">
+								<option value="0"></option>
+								<option value= "low">Low</options>
+								<option value= "med">Medium</options>
+								<option value= "high">High</options>
+							</select>
+							<br />
+						</td>
+					</tr>
+				</table>
+				<span id= "bottomright">
+						<button type= "button" onclick="showAll()"> Show All</button>
+				</span>
+			</div>
 		</fieldset>
 		<br />
 		<article>
