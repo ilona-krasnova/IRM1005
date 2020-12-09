@@ -15,3 +15,9 @@ $(document).ready(function(){
     $(".bio").animate({opacity: "1"});
   });
 });
+
+function adoptWindow(){
+  setTimeout(function(){
+    window.open("../../luskia/adopt/adopt.html?from=bio-08");}
+  , 1000);
+}
