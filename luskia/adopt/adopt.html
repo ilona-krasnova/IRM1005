@@ -9,6 +9,18 @@
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	
+	<script>
+$(document).ready(function(){
+  $("p").mouseover(function(){
+    $("p").css("background-color", "pink");
+  });
+  $("p").mouseout(function(){
+    $("p").css("background-color", "white");
+  });
+});
+</script>
+
 	<script src="../../json/database.json"></script>
 	<script src="adopt.js"></script>
 
@@ -130,7 +142,7 @@
 			<input type="radio" name="phonetype" id="homephone" value="Home Phone" checked /> Home Phone <br />
 			<input type="radio" name="phonetype" value="Cell Phone" /> Cell Phone <br />
 			<input type="radio" name="phonetype" value="Work Phone"/> Work Phone <br/>
-			<button>Uncheck </button>
+			
 
 		</span>
 		</p>
@@ -171,9 +183,7 @@
 	<p>
 
 
-<p>Click the erase to remove text in order to type your answers.</p>
 
-<button type="button" onclick="myFunction()">Erase</button>
 
 
 <p>
@@ -182,6 +192,30 @@
    <input type="text" name="References" value="Reference Number" style="margin-left: 255px;">
 </p>
 <br/>
+
+<h5>Please Check the box if the information on the form is true.</h5>
+
+<label for="myCheck">Checkbox:</label> 
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<h5 id="text" style="display:none">Checked! Thank you!</h5>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script> <br>
+<br>
+<br>
+<br>
+
+
 
 <input type="submit" onclick="clicked();" value="Submit" />
 

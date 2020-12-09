@@ -9,8 +9,23 @@
 	<link rel="stylesheet" type="text/css" href="team.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $("span").css("display", "inline").fadeOut(2000);
+  });
+});
+</script>
+
 	<script src="../../json/database.json"></script>
 	<script src="team.js"></script>
+
+<style>
+span {
+  display: none;
+}
+</style>
+
 
 </head>
 
@@ -35,7 +50,7 @@
 <br>
 <br>
 
-<p id="pgtwo">
+<p id="paratwo">
 	<img id="photo"src="https://www.cloudkettle.com/wp-content/uploads/2017/03/Meet-the-Team.jpg"alt="Team photo" width="300px"> 
 
 	Our team consists of four indivudals who have a passion for saving animals. Ilona, Phoebe, Yasmeen and Luskia dedicate most of their time saving precious animals found in poor environments. The four founded the shelter in 2010 and have accomplished so much in the span of 10 years. In total, they have saved over 250 animals and found loving families for each one of them. The recognized award winning pet shelter, continuously fuflills their mission on a daily basis despite difficult cirmcumstances. The four are always there to save a day and make a difference in these animal's lives. They will provide the saved animal an amazing home, while providing a family a pet that best fits their needs. Choosing the Mamba Pet Shelter will be one the best decisions you will ever make! Our team of professionals promises you that! </p>
@@ -79,241 +94,62 @@
 <br>
 
 
-
-
 <strong>Appedix For Evaluation Purposes (*WILL BE REMOVED)</strong> <br>
 
-<strong>Output Element</strong> <br>
+<h4>Click in the input fields below to get focus.</h4><br>
 
-<h5>Click the button to view the adoption shelter aniversary! (2002-06-07)".</h5>
-
-<button onclick="myFunction()">Click me for a date</button> <br>
-
-<h5>*View Date at the very bottom of the page after clicking</h5> <br>
-
-<script>
-function myFunction() {
-  var x = document.createElement("TIME");
-  x.setAttribute("datetime", "2002-06-07");
-  var t = document.createTextNode("aniversary");
-  x.appendChild(t);
-  document.body.appendChild(x);
-}
-
-</script>
-
-Are you willing to trust us?: <input type="checkbox" id="myCheck" onclick="myFunction()"> <br>
-
-
-<p id="text" style="display:none">Checkbox is CHECKED!</p>
-
-<!-- Checkbox code no working /!-->
-
-
-
-
-
-
-
-How much are you willing to trust us with your pet adoption within this range of 100? <br>
-<form action="action_page.php" oninput="x.value=parseInt(a.value)"> <br>
-<input type="range" id="a" name="a" value="10"> =
-<output name="x" for="Pet Adoption"></output>
-<br /><br />
-<input type="submit">
-</form> <br>
-
-<strong id="para0">Essential Items for Pets</strong> 
-<ul>
-	<li id="one">Pet Bed</li>
-	
-	<li id="two">Litter box</li>
-	
-	<li id="three">Bags or Scrappers for dog's feces</li>
-	
-	<li id="four">Leash</li>
-	
-	<li id="five">Id Tag</li>
-	
-	<li id="six">First aid kit</li>
-</ul> <br>
-
-<strong id="para1">Adoption Process For Our Shelter</strong> 
-
-<ol>
-	<li id="li1">Pick a pet online</li>
-	
-	<li id="li2">Visit the pet at the shelter</li>
-	
-	<li id="li3">Fill out an application for the pet</li>
-	
-	<li id="li4">FInalize the adoption</li>
-	
-	<li id="li5">Take the pet home</li>
-</ol> <br>
-
-<strong>Button</strong> <br>
+<h4>Type phrase a and a popup will appear</h4>
 <br>
-
-
-<button type="button" onclick="alert('Welcome To Pet Pal!')"> Welcome Message!
-</button> <br>
-<br>
-<section>
-			<strong>Pet Video</strong> <br>
-			
-			<iframe width="400" height="200" src="https://www.youtube.com/embed/cJ8XheIjSUs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<iframe width="400" height="200" src="https://www.youtube.com/embed/lyIPR4fX_bo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-		</section> <br>
-
-<style>
-.dropbtn {
-  background-color: #fefeff;
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #fefeff;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-</style>
-
-</head>
-
-<body>
-
-<h5>Dropdown menu </h5>
-
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">
-  Dropdown</button>
-  
-  <div id="myDropdown" class="dropdown-content">
-   
-    <a href="#home">Home</a>
+ <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button>
     
-    <a href="#about">About</a>
-    
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-
-<script>
-
-function myFunction() {
-  
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      
-      if (openDropdown.classList.contains('show')) {
-        
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script> <br>
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            // Displaying the value
+            alert(inputVal);
+        }
+    </script> <br>
 
 
-<H5 id="p3">Welcome To Mamba's Pet Shelter!</H5>
+<!--Checkbox-->
 
-<script>
-
-document.getElementById("p3").style.color = "white";
-
-</script> <br>
-
-
-First Name: <input type="text" id="myText" placeholder="Name">
-
-<h5>Click the button to change text in textfeild.</h5>
-
-<button onclick="myFunction()">Click Me</button>
-
-<script>
-function myFunction() {
-  
-  document.getElementById("myText").placeholder = "Pet Name..";
-}
-</script> <br>
 
 <br>
+<br>
+<br>
+<br>
 
-<button onclick="myFunction()">Click To View Petpal</button>
+Radio button: <input type="radio" name="colors" id="myRadio" checked>
+
+<h4>"Petpal is an amazing company" Select the button to view the correct answer to the statement.</h4>
+
+<button onclick="myFunction()">Click</button>
 
 <p id="demo"></p>
 
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "PetPal";
+  var x = document.getElementById("myRadio").checked;
+  document.getElementById("demo").innerHTML = x;
 }
-
 </script> <br>
 
 
-<h5>Click the textfield</h5>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("input").focus(function(){
-    $("span").css("display", "inline").fadeOut(2000);
-  });
-});
-</script>
-<style>
-span {
-  display: none;
-}
-</style>
-</head>
-<body>
+<button type="button"
+onclick="document.getElementById('paratwo').style.fontSize = '50px';">
+<h4>Click the button to make the font size larger</h4>
 
-<input>
+Click Me!
+</button> <br>
 
-<span>Luskia, Ilona, Pheobe, Yasmeen</span>
+<br>
 
+<input> <br>
 
-</body>
-</html>
+<span>Nice to meet you!</span><br>
 
 
 
