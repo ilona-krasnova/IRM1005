@@ -7,8 +7,29 @@
 	<title>Mamba's Pet Rescue | Simba</title>
 	<link rel="stylesheet" type="text/css" href="bio-04.css" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<script>
+function myFunction() {
+  document.getElementById("myTextarea").disabled = true;
+}
+</script>
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+	<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#box").animate({height: "300px"});
+  });
+  $("#btn2").click(function(){
+    $("#box").animate({height: "100px"});
+  });
+});
+</script>
+
 	<script src="../../json/database.json"></script>
 	<script src="bio-04.js"></script>
 
@@ -95,9 +116,46 @@
 				</a>
 				<a href="https://www.twitter.com/" target="_blank">
 					<i class='fab fa-twitter-square fa-2x'></i>
+
+
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
 				</a>
 			</span>
 		</footer>
+	
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+<p>Appendix</p>
+
+Address:<br>
+<textarea id="myTextarea">
+342 Alvin Road
+Ducksburg</textarea>
+
+<p>Click the button to disable the text area.</p>
+
+<button onclick="myFunction()">Disable Textarea</button>
+
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+
 	</main>
 </body>
 
