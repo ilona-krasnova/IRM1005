@@ -6,8 +6,82 @@
 	<meta charset="utf-8">
 	<title>Mamba's Pet Rescue | Cash</title>
 	<link rel="stylesheet" type="text/css" href="bio-05.css" />
+
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+$(document).ready(function(){
+ 
+  $("button").click(function(){
+    
+    $("#ts").slideToggle();
+  
+  });
+
+});
+
+</script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 	<script src="../../json/database.json"></script>
 	<script src="bio-05.js"></script>
@@ -97,9 +171,42 @@
 				</a>
 				<a href="https://www.twitter.com/" target="_blank">
 					<i class='fab fa-twitter-square fa-2x'></i>
-				</a>
+				
+		</a> <br>
+
+		
+
+
 			</span>
 		</footer>
+
+
+		<br>
+		<br>
+		<br>
+		<br>
+		
+
+
+		<p>Appendix For Grading Purposes</p><br>
+		<br>
+
+		<p>Dropdown List</p>
+
+         <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<p id="ts">This is a paragraph.</p> <br>
+
+<br>
+<button>Toggle slideUp() and slideDown()</button> <br>
+	
 	</main>
 </body>
 
