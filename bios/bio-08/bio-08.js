@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
   $("#adopt").mouseenter(function(){
-    $(".bio").animate({opacity: "0.2"});
+    $(".bio").animate({opacity: "0.8"});
   });
   $("#adopt").mouseleave(function(){
     $(".bio").animate({opacity: "1"});

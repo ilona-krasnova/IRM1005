@@ -12,7 +12,7 @@
 <script>
 $(document).ready(function(){
   $("input").focus(function(){
-    $("span").css("display", "inline").fadeOut(2000);
+    $("span#nice").css("display", "inline").fadeOut(2000);
   });
 });
 </script>
@@ -21,7 +21,7 @@ $(document).ready(function(){
 	<script src="team.js"></script>
 
 <style>
-span {
+span#nice {
   display: none;
 }
 </style>
@@ -88,10 +88,11 @@ span {
 
 
 
-<br>
-<br>
-<br>
-<br>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
 
 
 <strong>Appedix For Evaluation Purposes (*WILL BE REMOVED)</strong> <br>
@@ -99,7 +100,7 @@ span {
 <h4>Click in the input fields below to get focus.</h4><br>
 
 <h4>Type phrase a and a popup will appear</h4>
-<br>
+<br/>
  <input type="text" placeholder="Type something..." id="myInput">
     <button type="button" onclick="getInputValue();">Get Value</button>
     
@@ -149,7 +150,7 @@ Click Me!
 
 <input> <br>
 
-<span>Nice to meet you!</span><br>
+<span id="nice">Nice to meet you!</span><br>
 
 
 

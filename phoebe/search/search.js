@@ -81,13 +81,13 @@ function showSize() {
 	  $("#03").fadeIn(1000);
 	  $("#05").fadeIn(1000);
 	  $("#07").fadeIn(1000);
-	  $("#08").fadeIn(1000);
 	}
 
 	else if(sizVal == "medium") {
 		$(".all").fadeOut();
 		$("#04").fadeIn(1000);
 	  $("#06").fadeIn(1000);
+	  $("#08").fadeIn(1000);
 	}
 
 	else if(sizVal == "large") {
