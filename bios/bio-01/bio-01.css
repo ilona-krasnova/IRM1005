@@ -268,3 +268,6 @@ fieldset {
         left: 40px;
     }
 }
+#help {
+    display: none;
+}

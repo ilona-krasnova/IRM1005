@@ -7,7 +7,7 @@ $(document).ready(function() {
     filterChange();
     $("#next").click(nextProfile);
     $("#prev").click(prevProfile);
-    $("#like").click(matchProfile);
+    // $("#like").click(matchProfile);
     $("input[type=radio]").change(filterChange);
 });
 
@@ -50,7 +50,8 @@ function filterChange() {
 }
 
 function getFilterValue() {
-    if ($("input[type=radio][value=cat]").get(0).checked) {
+    if (document.getElementById('catbox').checked){
+        // $("input[type=radio][value=cat]").get(0).checked) {
         return "cat";
     }
     if ($("input[type=radio][value=dog]").get(0).checked) {

@@ -81,18 +81,18 @@
 		<!-- appendix for grading purposes :)-->
 		<aside>
 			<hr />
-			<h3>Appendix for grading: Survey</h3>
-				Hi, welcome to Mamba's Pet Rescue! Please fill out the survey below.
+			<h3><span id=toggle>Appendix for grading: Survey (toggle form)</span></h3>
+			<p id="subtitle" style="position: relative;">Hi, welcome to Mamba's Pet Rescue! Please fill out the survey below.</p>
 			<br /> <br />
 			<form class="survey" action="action_page.php">
 				<fieldset>
 					<legend>Personal Information</legend>
 					<p>
 						<label for="firstname">First name:</label>
-						<input id="firstname" type="text" name="firstname" value="" />
+						<input id="firstname" type="text" name="firstname" value="Not John" />
 					</p>
 					<p>
-						<label for="lastname">Last name:</label>
+						<label id="lastnamelabel" for="lastname">Last name: (dbl click)</label>
 						<input id="lastname" type="text" name="lastname" value="">
 					</p>
 				</fieldset>
@@ -109,18 +109,19 @@
 					</p>
 					<p>
 						<label>Location</label>
-						<select name="location">
+						<select name="location" onchange="selectChange(this)">
 							<option value="urban">Urban</option>
-							<option value="suburb">Subruban</option>
+							<option value="suburb">Subruban</option>	 
 							<option value="rural">Rural</option>
 						</select>
 					<p>
-						<label>Does your household have<br /><br /><br />&nbsp;</label>
+						<label>Does your household have<br /><br /><br /><br />&nbsp;</label>
 						<span style="display: inline-block;">
-							<input type="checkbox" name="children" value="children" />Children<br/> 
-							<input type="checkbox" name="cats" value="cats" />Cats<br/> 
-							<input type="checkbox" name="dogs" value="dogs" />Dogs<br/> 
-							<input type="checkbox" name="other-animals" value="other-animals" />Other animals
+							<input class="cb" type="checkbox" name="children" value="children" />Children<br/> 
+							<input class="cb" type="checkbox" name="cats" value="cats" />Cats<br/> 
+							<input class="cb" type="checkbox" name="dogs" value="dogs" />Dogs<br/> 
+							<input class="cb" type="checkbox" name="other-animals" value="other-animals" />Other animals <br/>
+							<a href="javascript: selectAll()">Select all</a>
 						</span>
 					</p>
 					<p>
@@ -144,12 +145,13 @@
 					</p>
 					<p>
 						<label for="message">Tell us about yourself!</label><br />
-						<textarea id="message" name="message" rows="10" cols="32" placeholder="In detail!"></textarea>
+						<textarea id="message" name="message" rows="10" cols="32"></textarea>
+						<span id="help">In detail!</span>
 					</p>
 				</fieldset>
 				<p>
-					<input type="submit" id="submit" value="Submit" />
-					<input type="reset" id="reset" value="Erase All">
+					<input type="button" id="submit" value="Submit" onclick="transformtext()" />
+					<input type="reset" id="reset" value="Erase All" onclick="clearsmiles()">
 				</p>
 			</form>
 		<h3>Paprika's Favourite YouTube Channel:</h3>
