@@ -1,32 +1,32 @@
 
 
 $(document).ready(function(){
-$("p").dblclick(function(){
-$(this).hide();
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
 });
-});
 
-<p>Click the "Try it" button to check the radio button.</p>
+/* <p>Click the "Try it" button to check the radio button.</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Try it</button> */
 
 
-function myFunction() {
+function myFunction1() {
   var x = document.getElementById("myRadio");
   x.checked = true;
 }
 
-function myFunction() {
+function myFunction2() {
   var x = document.createElement("INPUT");
   x.setAttribute("type", "radio");
   document.body.appendChild(x);
+}
 
-
-function myFunction() {
+function myFunction3() {
   document.getElementById("myTextarea").select();
 }
 
-function myFunction() {
+function myFunction4() {
 
   var checkBox = document.getElementById("myCheck");
   
@@ -54,16 +54,17 @@ $(document).ready(function(){
     $("span").css("display", "inline").fadeOut(2000);
   });
 });
-</script>
-<style>
-span {
-  display: none;
-}
-</style>
-</head>
-<body>
+// </script>
+// <style>
+// span {
+//   display: none;
+// }
+// </style>
+// </head>
+// <body>
 
-<input>
+// <input>
 
-<span>Nice to meet you!</span>
-<p>Click in the input field to get focus.</p>
+// <span>Nice to meet you!</span>
+// <p>Click in the input field to get focus.</p>
+// </input>

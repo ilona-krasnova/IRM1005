@@ -19,7 +19,7 @@
 
 $(document).ready(function(){
   
-  $("input").focus(function(){
+  $("input#fader").focus(function(){
     $("span#nice").css("display", "inline").fadeOut(2000);
   });
 
@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   
-  $("input").blur(function(){
+  $("input#blurred").blur(function(){
    
     alert("This input field has lost its focus.");
   
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   
-  $("button").click(function(){
+  $("button#fin").click(function(){
     
     $("#div1").fadeIn();
     
@@ -174,7 +174,7 @@ function myFunction() {
 
 
 <button type="button"
-onclick="document.getElementById('paratwo').style.fontSize = '50px';">
+onclick="document.getElementById('paratwo').style.fontSize = '25px';">
 
 <h4>Click the button to make the font size larger</h4>
 
@@ -185,14 +185,14 @@ Click Me!
 
 
 <h4>Click the text field for a nice message!</h4>
-<input> <br>
+<input id="fader"> <br>
 
 <span id="nice">Nice to meet you!</span><br>
 
 
 <h4>Write something in the input field, and then click outside the field to lose focus (blur).</h4> <br>
 
-Enter your name: <input type="text"> <br>
+Enter your name: <input type="text" id="blurred"> <br>
 <br>
 <br>
 <br>
