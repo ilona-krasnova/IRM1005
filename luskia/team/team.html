@@ -4,27 +4,72 @@
 <head>
 	<meta charset="utf-8">
 	<title>Mamba's Pet Rescue | Meet Our Team </title>
+	
 	<link rel="icon" type="image/icon" href="favicon.ico">
+	
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
 	<link rel="stylesheet" type="text/css" href="team.css"/>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
 <script>
+
 $(document).ready(function(){
+  
   $("input").focus(function(){
+<<<<<<< HEAD
+   
+    $("span").css("display", "inline").fadeOut(2000);
+=======
     $("span#nice").css("display", "inline").fadeOut(2000);
+>>>>>>> eee8809538d660e6c9380fb171a23b8ca823214a
   });
+
 });
+
+$(document).ready(function(){
+  
+  $("input").blur(function(){
+   
+    alert("This input field has lost its focus.");
+  
+  });
+
+});
+
+$(document).ready(function(){
+  
+  $("button").click(function(){
+    
+    $("#div1").fadeIn();
+    
+    $("#div2").fadeIn("slow");
+   
+    $("#div3").fadeIn(3000);
+ 
+  });
+
+});
+
+
+
 </script>
 
 	<script src="../../json/database.json"></script>
+	
 	<script src="team.js"></script>
+
+<<<<<<< HEAD
 
 <style>
 span#nice {
   display: none;
 }
 </style>
+>>>>>>> eee8809538d660e6c9380fb171a23b8ca823214a
 
 
 </head>
@@ -82,6 +127,7 @@ span#nice {
 	</span>
 
 
+</footer>
 
 
 
@@ -93,7 +139,6 @@ span#nice {
 <hr/>
 <br/>
 <br/>
-
 
 <strong>Appedix For Evaluation Purposes (*WILL BE REMOVED)</strong> <br>
 
@@ -123,17 +168,13 @@ span#nice {
 <br>
 <br>
 
-Radio button: <input type="radio" name="colors" id="myRadio" checked>
 
-<h4>"Petpal is an amazing company" Select the button to view the correct answer to the statement.</h4>
-
-<button onclick="myFunction()">Click</button>
-
-<p id="demo"></p>
 
 <script>
 function myFunction() {
+  
   var x = document.getElementById("myRadio").checked;
+  
   document.getElementById("demo").innerHTML = x;
 }
 </script> <br>
@@ -141,6 +182,7 @@ function myFunction() {
 
 <button type="button"
 onclick="document.getElementById('paratwo').style.fontSize = '50px';">
+
 <h4>Click the button to make the font size larger</h4>
 
 Click Me!
@@ -148,13 +190,37 @@ Click Me!
 
 <br>
 
+
+<h4>Click the text field for a nice message!</h4>
 <input> <br>
 
 <span id="nice">Nice to meet you!</span><br>
 
 
+<h4>Write something in the input field, and then click outside the field to lose focus (blur).</h4> <br>
 
-</footer>
+Enter your name: <input type="text"> <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<button id="fin">Click to fade out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+
+
+
+
 </main>
+
+
+
 </body>
 </html>
